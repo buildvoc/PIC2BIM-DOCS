@@ -1,5 +1,5 @@
 ---
-title: Mobile iOS
+title: Mobile Application - iOS
 description: Geotagging Photos, Task List, Map,  Path Tracking, GNSS SkyMap
 ---
 ### Installation
