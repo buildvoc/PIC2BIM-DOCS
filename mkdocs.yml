@@ -1,0 +1,44 @@
+site_name: PIC2BIM DOCS
+site_url: https://docs.pic2bim.co.uk
+
+theme:
+  logo: assets//images/logo_egnss4all_white.png
+  name: 'material'
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+        primary: blue
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+        primary: blue
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - content.tabs.link
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - obsidian-interactive-graph
+  #- callouts
+  #- obsidian-support
+  #- obsidian-bridge
+  - material/social
+  - search
+
+extra_javascript:
+  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
+  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  - assets/javascripts/interactive_graph.js
+
+extra_css:
+  - assets/stylesheets/interactive_graph.css
