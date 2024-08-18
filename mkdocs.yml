@@ -1,13 +1,6 @@
 site_name: PIC2BIM DOCS
 site_url: https://docs.pic2bim.co.uk
 
-nav:
-  - Introduction & Quick Start: index.md
-  - Mobile Application - iOS: ios.md
-  - Mobile Application - Android: android.md
-  - Web Console: web-console.md
-  - Building Attributes: building-attributes.md
-
 theme:
   logo: assets//images/logo_egnss4all_white.png
   name: 'material'
@@ -28,6 +21,7 @@ theme:
   features:
     - navigation.expand
     - navigation.indexes
+    - content.tabs.link
 
 markdown_extensions:
   - pymdownx.tasklist:
@@ -35,6 +29,9 @@ markdown_extensions:
 
 plugins:
   - obsidian-interactive-graph
+  #- callouts
+  #- obsidian-support
+  #- obsidian-bridge
   - material/social
   - search
 
