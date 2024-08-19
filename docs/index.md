@@ -4,14 +4,6 @@ description: PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application
 ---
 Interactive Graph Links ---
 
-[[web-console]]
-
-[[ios]]
-
-[[android]]
-
-[[building-attributes]] 
-
 ### Introduction
 PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application, which is Open-Source for IOS and Android.
 

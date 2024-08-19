@@ -14,7 +14,7 @@
       
       
       
-        <link rel="next" href="ios/">
+        <link rel="next" href="android/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Introduction & Getting started - PIC2BIM DOCS</title>
+        <title>Getting started - PIC2BIM DOCS</title>
       
     
     
@@ -48,6 +48,10 @@
       
     
     
+      <link rel="stylesheet" href="assets/stylesheets/obsidian_tags.css">
+    
+      <link rel="stylesheet" href="assets/stylesheets/interactive_graph.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -57,7 +61,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Introduction & Getting started" >
+        <meta  property="og:title"  content="Getting started" >
       
         <meta  property="og:description"  content="PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application" >
       
@@ -73,7 +77,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Introduction & Getting started" >
+        <meta  name="twitter:title"  content="Getting started" >
       
         <meta  name="twitter:description"  content="PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application" >
       
@@ -81,7 +85,16 @@
       
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -135,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction & Getting started
+              Getting started
             
           </span>
         </div>
@@ -151,7 +164,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
       </label>
     
   
@@ -161,7 +174,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
       </label>
     
   
@@ -190,11 +203,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -264,7 +284,7 @@
           
   
   <span class="md-ellipsis">
-    Introduction & Quick Start
+    Getting started
   </span>
   
 
@@ -275,7 +295,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction & Quick Start
+    Getting started
   </span>
   
 
@@ -411,6 +431,46 @@
   
   
     <li class="md-nav__item">
+      <a href="android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobile Application - iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="building-attributes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building attributes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="ios/" class="md-nav__link">
         
   
@@ -431,11 +491,11 @@
   
   
     <li class="md-nav__item">
-      <a href="android/" class="md-nav__link">
+      <a href="web-console-tasklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Mobile Application - Android
+    Web Console Interface
   </span>
   
 
@@ -455,11 +515,154 @@
         
   
   <span class="md-ellipsis">
-    Web Console
+    Web Console Interface
   </span>
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/Concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/field-inspection-onsite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Onsite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/field-inspection-supervisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -605,9 +808,10 @@
                   
 
 
-  <h1>Introduction & Quick Start</h1>
+  <h1>Getting started</h1>
 
-<h3 id="introduction">Introduction</h3>
+<p>Interactive Graph Links ---</p>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h3>
 <p>PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application, which is Open-Source for IOS and Android.</p>
 <p>Initially developed by EU Space Programme see <a href="http://egnss4cap.eu/"><u>http://egnss4cap.eu/</u></a> for more information, now being maintained and developed by PIC2BIM.</p>
 </p>It takes advantage of GNSS raw measurements, European Global Navigation Satellite System (EGNSS) differentiators </p>
@@ -616,7 +820,7 @@
 <li>European Geostationary Navigation Overlay Service (EGNOS)</li>
 <li>Dual frequency capabilities </li>
 </ul>
-<h4 id="features">Features</h4>
+<h4 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h4>
 <p>Inside the App, the user can perform several different tasks:</p>
 <ul>
 <li>Taking photos, storing the position data (PVT) and representing them on the map</li>
@@ -634,9 +838,9 @@
 <li>EGNOS signal check: <em>green light</em> if this device is capable to use ENOS (Android)</li>
 <li>Galileo Nav Message Signal check: <em>green light</em> if this device is capable to use OS-NMA (Android)</li>
 </ul>
-<h3 id="building-information-modelling-bim">Building Information Modelling (BIM)</h3>
+<h3 id="building-information-modelling-bim">Building Information Modelling (BIM)<a class="headerlink" href="#building-information-modelling-bim" title="Permanent link">#</a></h3>
 <p>Future development</p>
-<h3 id="getting-started"><b>Getting started</b></h3>
+<h3 id="getting-started"><b>Getting started</b><a class="headerlink" href="#getting-started" title="Permanent link">#</a></h3>
 <p>This  Quick  Start  Guide  provides  a  brief  overview  of  the  main  functionalities  of  the  PIC2BIM application.  Detailed  information  on  the  functionalities  of  the  application  can  be  found  in  the following sections:</p>
 <ul>
 <li>Mobile Application - iOS</li>
@@ -646,14 +850,14 @@
 <p>The Pic2Bim / Egnss4all application is available at Google Play Store and Apple App Store:</p>
 <p><a href="https://play.google.com/store/apps/details?id=com.erasmicoin.euspa.gsa.egnss4all&amp;hl=en"><img src="/media/media_google-play.png" width="229" height="73" /></a>
 <a href="https://apps.apple.com/ai/app/egnss4all/id1628843978"><img src="/media/media_app-store.png" width="229" height="71" /></a></p>
-<h4 id="login">Login</h4>
+<h4 id="login">Login<a class="headerlink" href="#login" title="Permanent link">#</a></h4>
 <p>Click the <em>Sign In</em> button to complete the login.</p>
-<p><img src="/media/media_47a80ccdb00dfa6c.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_47a80ccdb00dfa6c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_47a80ccdb00dfa6c.png" width="189" height="334" /></a></p>
 <p>Fig. 20 <b>Login screen</b></p>
 <p>Through the "Select Server" button, it will be possible to set the URL of a custom server  that will be used instead of the app's default server.</p>
 <p>Enter "https://pic2bim.co.uk/" and click save.</p>
 
-<p><img src="/media/media_8a6887262f599c06.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_8a6887262f599c06.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8a6887262f599c06.png" width="189" height="334" /></a></p>
 <p>Fig. 21 <b>Select Server</b></p>
 <ul>
 <li>
@@ -665,73 +869,73 @@ For the first login, request a  user  and  password  combination  at  <a href="h
 <p>After the first login, the credentials will be stored in the device.</p>
 </li>
 </ul>
-<h4 id="how-to-make-a-photo">How to Make a Photo</h4>
+<h4 id="how-to-make-a-photo">How to Make a Photo<a class="headerlink" href="#how-to-make-a-photo" title="Permanent link">#</a></h4>
 <p>Go to Unassigned Photos/Photos Menu (Fig. 1, for Android devices or Fig. 2 for iOS Devices)</p>
-<p><img src="/media/media_unassigned-photos-android.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_unassigned-photos-android.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_unassigned-photos-android.png" width="189" height="334" /></a></p>
 <p>Fig. 1 <b>Unassigned Photos</b> (Android)</p>
 
-<p><img src="/media/media_photos-menu.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_photos-menu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_photos-menu.png" width="189" height="334" /></a></p>
 <p>Fig.2 <b>Photos Menu</b> (iOS)</p>
 
 <p>Click on “TAKE PHOTO” and the camera turns on. After a few seconds, the snap
 photo button appears on the screen (Android). </p>
-<p><img src="/media/media_take-a-photo-android.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_take-a-photo-android.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_take-a-photo-android.png" width="189" height="334" /></a> </p>
 <p>Fig.3 <b>Take a Photo</b> (Android)</p>
 
-<p><img src="/media/media_camera-android.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_camera-android.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_camera-android.png" width="189" height="334" /></a></p>
 <p>Fig.4 <b>Camera</b> (Android)</p>
 
 <p>Click on “New” and the camera
 turns on. After
 a few seconds, the snap
 photo button appears on the screen (iOS).</p>
-<p><img src="/media/media_new-photo-ios.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_new-photo-ios.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_new-photo-ios.png" width="189" height="334" /></a> </p>
 <p>Fig.5 <b>New Photo</b> (iOS)</p>
-<p><img src="/media/media_camera-ios.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_camera-ios.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_camera-ios.png" width="189" height="334" /></a></p>
 <p>Fig.6 <b>Camera</b> (iOS)</p>
 
-<h4 id="how-to-see-your-photos">How to see your Photos</h4>
+<h4 id="how-to-see-your-photos">How to see your Photos<a class="headerlink" href="#how-to-see-your-photos" title="Permanent link">#</a></h4>
 <p>Click on “MAP” and the pictures will be displayed in their location on a map (Android).</p>
-<p><img src="/media/media_map-android.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_map-android.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_map-android.png" width="189" height="334" /></a> </p>
 <p>Fig.7 Map (Android)</p>
-<p><img src="/media/media_photo-location-android.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_photo-location-android.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_photo-location-android.png" width="189" height="334" /></a></p>
 <p>Fig.8 <b>Photo Location</b> (Android)</p>
 
 <p>Click on “MAP” and the pictures will be displayed in their location on a map (iOS).</p>
-<p><img src="/media/media_map-ios.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_map-ios.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_map-ios.png" width="189" height="334" /></a> </p>
 <p>Fig.9 <b>Map</b> (iOS)</p>
-<p><img src="/media/media_photo-location-ios.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_photo-location-ios.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_photo-location-ios.png" width="189" height="334" /></a></p>
 <p>Fig.10 <b>Photo Location</b> (iOS)</p>
 
-<h4 id="how-to-send-or-save-to-pdf-your-geotagged-photos">How to SEND or SAVE to PDF your geotagged photos</h4>
+<h4 id="how-to-send-or-save-to-pdf-your-geotagged-photos">How to SEND or SAVE to PDF your geotagged photos<a class="headerlink" href="#how-to-send-or-save-to-pdf-your-geotagged-photos" title="Permanent link">#</a></h4>
 <p>Click on “SEND” and the pictures will be uploaded to the server (Android and iOS).</p>
-<p><img src="/media/media_send-photo-android-1.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_send-photo-android-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_send-photo-android-1.png" width="189" height="334" /></a> </p>
 <p>Fig.11 <b>Send Photo</b> (Android)</p>
-<p><img src="/media/media_send-photo-ios-1.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_send-photo-ios-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_send-photo-ios-1.png" width="189" height="334" /></a></p>
 <p>Fig.12 <b>Send Photo</b> (iOS)</p>
 
-<h4 id="how-to-track-a-path-or-make-a-polygon">How to TRACK a path or MAKE a polygon</h4>
+<h4 id="how-to-track-a-path-or-make-a-polygon">How to TRACK a path or MAKE a polygon<a class="headerlink" href="#how-to-track-a-path-or-make-a-polygon" title="Permanent link">#</a></h4>
 <p>Click on “Path Tracking” and then choose between record a new path or browse the paths already recoded and upload them or export to a KML file (Android).</p>
-<p><img src="/media/media_send-photo-android-2.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_send-photo-android-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_send-photo-android-2.png" width="189" height="334" /></a> </p>
 <p>Fig.13 <b>Send Photo</b> (Android)</p>
-<p><img src="/media/media_send-photo-ios-2.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_send-photo-ios-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_send-photo-ios-2.png" width="189" height="334" /></a></p>
 <p>Fig.14 <b>Send Photo</b> (iOS)</p>
 
 <p>Click on “Map Menu” and then choose between record a new path or browse the paths already recoded and upload them or export to a KML file (iOS).</p>
-<p><img src="/media/media_map-ios.png" width="189" height="334" /> </p>
+<p><a class="glightbox" href="/media/media_map-ios.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_map-ios.png" width="189" height="334" /></a> </p>
 <p>Fig.15 <b>Map</b> (iOS)</p>
-<p><img src="/media/media_send-photo-ios-3.png" width="189" height="334" /></p>
+<p><a class="glightbox" href="/media/media_send-photo-ios-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_send-photo-ios-3.png" width="189" height="334" /></a></p>
 <p>Fig.16 <b>Send Photo</b> (iOS)</p>
 
-<h4 id="how-to-use-the-web-console">How to USE the web console</h4>
+<h4 id="how-to-use-the-web-console">How to USE the web console<a class="headerlink" href="#how-to-use-the-web-console" title="Permanent link">#</a></h4>
 <p>Using the same credentials than the ones available for the application (demo/demo by default), it’s possible to connect and check the data uploaded from the smartphone (Android and iOS).
 The URL is <a href="https://www.pic2bim.co.uk/"><u>https://www.pic2bim.co.uk/</u></a> there is the possibility to check the unassigned photos or the paths.
 Scroll-up to see all the options, in case that you are not able to see the displayed buttons.</p>
-<p><img src="/media/media_web-console-01.png" width="363" height="35" /></p>
+<p><a class="glightbox" href="/media/media_web-console-01.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_web-console-01.png" width="363" height="35" /></a></p>
 <p>Fig. 17 <b>Web console</b></p>
-<p><img src="/media/media_web-console-available-photos.png" width="363" height="35" /></p>
+<p><a class="glightbox" href="/media/media_web-console-available-photos.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_web-console-available-photos.png" width="363" height="35" /></a></p>
 <p>Fig. 18 <b>Available photos</b></p>
-<p><img src="/media/media_web-console-available-paths.png" width="363" height="35" /></p>
+<p><a class="glightbox" href="/media/media_web-console-available-paths.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_web-console-available-paths.png" width="363" height="35" /></a></p>
 <p>Fig. 19 <b>Available paths</b></p>
 
 
@@ -753,8 +957,16 @@ Scroll-up to see all the options, in case that you are not able to see the displ
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -782,11 +994,21 @@ Scroll-up to see all the options, in case that you are not able to see the displ
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.indexes"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
       
+        <script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+      
+        <script src="assets/javascripts/obsidian_tags.js"></script>
+      
+        <script src="assets/javascripts/interactive_graph.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

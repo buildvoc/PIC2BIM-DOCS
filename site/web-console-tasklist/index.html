@@ -1,0 +1,2799 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Web Console it’s possible to connect and check the data uploaded from the smartphone (Android and iOS).">
+      
+      
+      
+        <link rel="canonical" href="https://docs.pic2bim.co.uk/web-console-tasklist/">
+      
+      
+        <link rel="prev" href="../ios/">
+      
+      
+        <link rel="next" href="../web-console/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Web Console Interface - PIC2BIM DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/obsidian_tags.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/interactive_graph.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Web Console Interface - PIC2BIM DOCS" >
+      
+        <meta  property="og:description"  content="Web Console it’s possible to connect and check the data uploaded from the smartphone (Android and iOS)." >
+      
+        <meta  property="og:image"  content="https://docs.pic2bim.co.uk/assets/images/social/web-console-tasklist.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.pic2bim.co.uk/web-console-tasklist/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Web Console Interface - PIC2BIM DOCS" >
+      
+        <meta  name="twitter:description"  content="Web Console it’s possible to connect and check the data uploaded from the smartphone (Android and iOS)." >
+      
+        <meta  name="twitter:image"  content="https://docs.pic2bim.co.uk/assets/images/social/web-console-tasklist.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#web-console-interface" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PIC2BIM DOCS" class="md-header__button md-logo" aria-label="PIC2BIM DOCS" data-md-component="logo">
+      
+  <img src="../assets/images/logo_egnss4all_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PIC2BIM DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Web Console Interface
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PIC2BIM DOCS" class="md-nav__button md-logo" aria-label="PIC2BIM DOCS" data-md-component="logo">
+      
+  <img src="../assets/images/logo_egnss4all_white.png" alt="logo">
+
+    </a>
+    PIC2BIM DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobile Application - iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../building-attributes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building attributes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobile Application - iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Web Console Interface
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Web Console Interface
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#web-console-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Console Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Console Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-login-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.0 Login screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-task-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Task List
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Task List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#210-tasks-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.0 Tasks Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-open-task-detail-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 Open task detail actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#220-task-detail-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.0 Task Detail page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223-user-can-select-photos-for-export-to-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.3 User can select photos for export to PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224-pdf-export-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.4 PDF export functionality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-standalone-photos-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Standalone photos gallery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Standalone photos gallery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.1 Rotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.2 Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-select-for-an-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.3 Select for an action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-bulk-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.4 Bulk actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-displays-a-page-where-you-can-select-the-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.5 Displays a page where you can select the task:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-delete-selected-photos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.6 Delete selected photos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#317-export-all-to-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.7 Export all to PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#318-export-selected-to-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.8 Export selected to PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#319-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.9 Control panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-user-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 User paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 User paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#410-highlighted-path-with-point-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.0 Highlighted path with point detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#411-generating-pdf-documents-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.1 Generating PDF documents actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#50-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.0 Map
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.0 Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#510-map-active-status-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.0 Map active status markers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-map-middle-zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Map middle zoom
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.0 Administrator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.0 Administrator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#610-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.0 User role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#611-officer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Officer role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-super-admin-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Super-admin role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      User management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-detail-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Detail Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Super-administrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agency-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agency list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agency-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agency detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a new officer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-an-existing-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit an existing officer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivate-an-existing-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deactivate an existing officer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-a-hosting-and-installing-the-web-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix A: Hosting and installing the web console
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix A: Hosting and installing the web console">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hosting-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosting requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-resources-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Server resources requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-steps-for-the-webconsole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps for the webconsole
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-b-developer-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix B: Developer Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix B: Developer Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-services-and-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Services and Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Services and Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Web Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-user-by-login-and-pswd" class="md-nav__link">
+    <span class="md-ellipsis">
+      check user by login and pswd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-geometry-shapes-for-rectangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends geometry shapes for rectangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-photos-for-task-or-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends photos for task or user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-tasks-for-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends tasks for user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-task-data-from-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive task data from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-paths-for-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends paths for user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-photo-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends photo by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-path-from-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive path from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-photo-data-from-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive photo data from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-task-data-from-phone_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive task data from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-ids-of-unassigned-photos-for-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends IDs of unassigned photos for user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Console Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/Concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/field-inspection-onsite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Onsite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/field-inspection-supervisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#web-console-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Console Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Console Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-login-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.0 Login screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-task-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Task List
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Task List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#210-tasks-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.0 Tasks Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-open-task-detail-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 Open task detail actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#220-task-detail-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.0 Task Detail page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223-user-can-select-photos-for-export-to-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.3 User can select photos for export to PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224-pdf-export-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.4 PDF export functionality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-standalone-photos-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Standalone photos gallery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Standalone photos gallery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.1 Rotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.2 Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-select-for-an-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.3 Select for an action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-bulk-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.4 Bulk actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-displays-a-page-where-you-can-select-the-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.5 Displays a page where you can select the task:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-delete-selected-photos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.6 Delete selected photos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#317-export-all-to-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.7 Export all to PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#318-export-selected-to-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.8 Export selected to PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#319-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.9 Control panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-user-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 User paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 User paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#410-highlighted-path-with-point-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.0 Highlighted path with point detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#411-generating-pdf-documents-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1.1 Generating PDF documents actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#50-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.0 Map
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.0 Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#510-map-active-status-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.0 Map active status markers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-map-middle-zoom" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Map middle zoom
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.0 Administrator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.0 Administrator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#610-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.0 User role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#611-officer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Officer role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-super-admin-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Super-admin role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      User management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-detail-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Detail Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Super-administrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agency-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agency list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agency-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agency detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a new officer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-an-existing-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit an existing officer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivate-an-existing-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deactivate an existing officer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-a-hosting-and-installing-the-web-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix A: Hosting and installing the web console
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix A: Hosting and installing the web console">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hosting-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosting requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-resources-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Server resources requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-steps-for-the-webconsole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps for the webconsole
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appendix-b-developer-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix B: Developer Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix B: Developer Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-services-and-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Services and Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Services and Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Web Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-user-by-login-and-pswd" class="md-nav__link">
+    <span class="md-ellipsis">
+      check user by login and pswd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-geometry-shapes-for-rectangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends geometry shapes for rectangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-photos-for-task-or-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends photos for task or user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-tasks-for-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends tasks for user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-task-data-from-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive task data from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-paths-for-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends paths for user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-photo-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends photo by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-path-from-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive path from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-photo-data-from-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive photo data from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receive-task-data-from-phone_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      receive task data from phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends-ids-of-unassigned-photos-for-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      sends IDs of unassigned photos for user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Web Console Interface</h1>
+
+<h2 id="web-console-interface">Web Console Interface<a class="headerlink" href="#web-console-interface" title="Permanent link">#</a></h2>
+<p>The web console is accessible through the following link:
+<a href="https://www.pic2bim.co.uk/"><u>https://www.pic2bim.co.uk/</u></a></p>
+<h3 id="10-login-screen">1.0 Login screen<a class="headerlink" href="#10-login-screen" title="Permanent link">#</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Login screen</li>
+</ul>
+<p><a class="glightbox" href="/media/media_ce40e37ac8e7d2e8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_ce40e37ac8e7d2e8.png" width="353" height="352" /></a>  </p>
+<p>Fig. 34 Web Console login</p>
+<h3 id="21-task-list">2.1 Task List<a class="headerlink" href="#21-task-list" title="Permanent link">#</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Task List</li>
+</ul>
+<p><a class="glightbox" href="/media/media_8372ad0c74abb659.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8372ad0c74abb659.png" width="650" height="323" /></a></p>
+<p>Fig.36 Tasks and Map</p>
+<h4 id="210-tasks-status">2.1.0 Tasks Status<a class="headerlink" href="#210-tasks-status" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Task Status</li>
+</ul>
+<p><a class="glightbox" href="/media/media_eb7f9ff2260a9fb8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_eb7f9ff2260a9fb8.png" width="650" height="332" /></a></p>
+<p>Fig. 37 Tasks Status</p>
+<h4 id="211-open-task-detail-actions">2.1.1 Open task detail actions<a class="headerlink" href="#211-open-task-detail-actions" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_f2c99e115a7738be.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2c99e115a7738be.png" width="183" height="47" /></a></p>
+<p><a class="glightbox" href="/media/media_e91744cf2298e587.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e91744cf2298e587.png" width="650" height="27" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Task data on map</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Photo marker on map</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Search for tasks</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Cancel Sorting</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Filter tasks</li>
+</ul>
+<p><a class="glightbox" href="/media/media_3b226a031e380fd5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3b226a031e380fd5.png" width="436" height="58" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sort tasks</li>
+</ul>
+<p><a class="glightbox" href="/media/media_abee81602bcd0ed1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_abee81602bcd0ed1.png" width="109" height="51" /></a>
+<a class="glightbox" href="/media/media_497ed878a3764f23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_497ed878a3764f23.png" width="627" height="64" /></a>  </p>
+<p><a class="glightbox" href="/media/media_3ded08d38d0048d1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3ded08d38d0048d1.png" width="176" height="32" /></a>  </p>
+<h4 id="220-task-detail-page">2.2.0 Task Detail page<a class="headerlink" href="#220-task-detail-page" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Task Detail page</li>
+</ul>
+<p><a class="glightbox" href="/media/media_e7ecd8bee5ef8a5d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e7ecd8bee5ef8a5d.png" width="650" height="337" /></a></p>
+<p>Fig.38 Task detail actions</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Display a page with unassigned photos</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Photos can be rotated</li>
+</ul>
+<p><a class="glightbox" href="/media/media_959a4f84809a7066.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_959a4f84809a7066.png" width="58" height="36" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Click on the photo to open the Photo Gallery</li>
+</ul>
+<h4 id="223-user-can-select-photos-for-export-to-pdf">2.2.3 User can select photos for export to PDF<a class="headerlink" href="#223-user-can-select-photos-for-export-to-pdf" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_b9a1f67d75901d48.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_b9a1f67d75901d48.png" width="86" height="27" /></a></p>
+<p><a class="glightbox" href="/media/media_32cb754056fc8117.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_32cb754056fc8117.png" width="387" height="60" /></a></p>
+<h4 id="224-pdf-export-functionality">2.2.4 PDF export functionality<a class="headerlink" href="#224-pdf-export-functionality" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PDF export functionality</li>
+</ul>
+<h3 id="31-standalone-photos-gallery">3.1 Standalone photos gallery<a class="headerlink" href="#31-standalone-photos-gallery" title="Permanent link">#</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Standalone photos gallery</li>
+</ul>
+<p><a class="glightbox" href="/media/media_987f5869113b749c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_987f5869113b749c.png" width="650" height="332" /></a></p>
+<p>Fig. 40 Unassigned photos</p>
+<h4 id="311-rotation">3.1.1 Rotation <a class="glightbox" href="/media/media_3abcbf294c5f55f7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3abcbf294c5f55f7.png" width="58" height="37" /></a><a class="headerlink" href="#311-rotation" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Rotation</li>
+</ul>
+<h4 id="312-delete">3.1.2 Delete <a class="glightbox" href="/media/media_7e7520483684c77e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7e7520483684c77e.png" width="21" height="29" /></a><a class="headerlink" href="#312-delete" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Delete</li>
+</ul>
+<h4 id="313-select-for-an-action">3.1.3 Select for an action <a class="glightbox" href="/media/media_db5565f08fd0257d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_db5565f08fd0257d.png" width="66" height="28" /></a><a class="headerlink" href="#313-select-for-an-action" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_7d3d8d5292e8e65b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7d3d8d5292e8e65b.png" width="128" height="83" /></a></p>
+<h4 id="314-bulk-actions">3.1.4 Bulk <em>actions</em><a class="headerlink" href="#314-bulk-actions" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_3d5d54be425feab7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3d5d54be425feab7.png" width="650" height="63" /></a></p>
+<p><a class="glightbox" href="/media/media_84ca2e2f23d979ce.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_84ca2e2f23d979ce.png" width="650" height="60" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Select all</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cancel selection</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Choose task</li>
+</ul>
+<h4 id="315-displays-a-page-where-you-can-select-the-task">3.1.5 Displays a page where you can select the task:<a class="headerlink" href="#315-displays-a-page-where-you-can-select-the-task" title="Permanent link">#</a></h4>
+<h4 id="316-delete-selected-photos">3.1.6 Delete selected photos<a class="headerlink" href="#316-delete-selected-photos" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Delete selected photos</li>
+</ul>
+<p><a class="glightbox" href="/media/media_455d910b74ee28f.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_455d910b74ee28f.png" width="447" height="183" /></a></p>
+<h4 id="317-export-all-to-pdf">3.1.7 Export all to PDF<a class="headerlink" href="#317-export-all-to-pdf" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Export all to PDF</li>
+</ul>
+<h4 id="318-export-selected-to-pdf">3.1.8 Export selected to PDF<a class="headerlink" href="#318-export-selected-to-pdf" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Export selected to PDF</li>
+</ul>
+<p>Photo gallery</p>
+<p><a class="glightbox" href="/media/media_995e8070844c221a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_995e8070844c221a.png" width="576" height="654" /></a></p>
+<p>Fig. 41 Photo gallery</p>
+<h4 id="319-control-panel">3.1.9 Control panel<a class="headerlink" href="#319-control-panel" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Zoom in</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Zoom out</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Reset zoom</li>
+</ul>
+<p><a class="glightbox" href="/media/media_274c8f734212bc4c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_274c8f734212bc4c.png" width="406" height="168" /></a>  </p>
+<h3 id="41-user-paths">4.1 User paths<a class="headerlink" href="#41-user-paths" title="Permanent link">#</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> User paths</li>
+</ul>
+<p><a class="glightbox" href="/media/media_7b6598d7f4cc6bf1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7b6598d7f4cc6bf1.png" width="109" height="31" /></a> </p>
+<p><a class="glightbox" href="/media/media_80f9c808fabbd3c9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_80f9c808fabbd3c9.png" width="650" height="297" /></a></p>
+<p>Fig. 42 User paths</p>
+<h4 id="410-highlighted-path-with-point-detail">4.1.0 Highlighted path with point detail<a class="headerlink" href="#410-highlighted-path-with-point-detail" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Highlighted path with point detail</li>
+</ul>
+<p><a class="glightbox" href="/media/media_c4d2f51d24fb4b97.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_c4d2f51d24fb4b97.png" width="650" height="296" /></a></p>
+<p>Fig. 43 Highlighted path with point detail</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> delete path</li>
+</ul>
+<p><a class="glightbox" href="/media/media_8c94a2a379769430.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8c94a2a379769430.png" width="105" height="28" /></a>  </p>
+<h4 id="411-generating-pdf-documents-actions">4.1.1 Generating PDF documents actions<a class="headerlink" href="#411-generating-pdf-documents-actions" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_32cb754056fc8117.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_32cb754056fc8117.png" width="367" height="57" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Export all to PDF</li>
+</ul>
+<p><a class="glightbox" href="/media/media_a6a98ef36d008b95.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_a6a98ef36d008b95.png" width="650" height="321" /></a></p>
+<p>Fig. 44 PDF generating prepare page</p>
+<p><a class="glightbox" href="/media/media_e6361a298a91396d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e6361a298a91396d.png" width="189" height="334" /></a>  </p>
+<p>Fig. 45 Progress loader</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Export selected to PDF</li>
+</ul>
+<p><a class="glightbox" href="/media/media_cf6f5e8bb44156fe.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_cf6f5e8bb44156fe.png" width="650" height="421" /></a></p>
+<p>Fig. 46 Selected photo</p>
+<h3 id="50-map">5.0 Map<a class="headerlink" href="#50-map" title="Permanent link">#</a></h3>
+<p><a class="glightbox" href="/media/media_68441ea2e0022d85.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_68441ea2e0022d85.png" width="650" height="233" /></a></p>
+<p>Fig. 47 Map</p>
+<h4 id="510-map-active-status-markers">5.1.0 Map active status markers<a class="headerlink" href="#510-map-active-status-markers" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> new</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> open</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> data provided</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> data checked (green)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> data checked (red)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> returned</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> unassigned photos are not color* coded.</li>
+</ul>
+<p><a class="glightbox" href="/media/media_7fe4e6af989321c9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7fe4e6af989321c9.png" width="605" height="39" /></a></p>
+<p>Fig. 44 Task status list</p>
+<h4 id="511-map-middle-zoom">5.1.1 Map middle zoom<a class="headerlink" href="#511-map-middle-zoom" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> middle zoom</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> grouped into one group with a numerical expression</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Click on the group icon to zoom in on
+the group position</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> preview banners that display a specific user</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> the name of the
+task, the photo and </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> the radius of the camera view at the time the photo was taken.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clicking on this banner opens the following task detail</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Polygons of existing plots and their names are also shown.
+<a class="glightbox" href="/media/media_a5a53542367a0beb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_a5a53542367a0beb.png" width="518" height="338" /></a></li>
+</ul>
+<p>Fig. 48 Map <em>a middle zoom</em></p>
+<p><a class="glightbox" href="/media/media_db4a3402c04fe4cd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_db4a3402c04fe4cd.png" width="549" height="269" /></a></p>
+<p>Fig. 49 Map – detail zoom in</p>
+<h3 id="60-administrator">6.0 Administrator<a class="headerlink" href="#60-administrator" title="Permanent link">#</a></h3>
+<h4 id="610-user-role">6.1.0 User role<a class="headerlink" href="#610-user-role" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> User role</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Change Password</li>
+</ul>
+<h4 id="611-officer-role">6.1.1 Officer role<a class="headerlink" href="#611-officer-role" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Officer role</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Search for tasks</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cancel Sorting</li>
+</ul>
+<p><a class="glightbox" href="/media/media_f2c99e115a7738be.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2c99e115a7738be.png" width="183" height="47" /></a>    </p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Filter tasks</li>
+</ul>
+<p><a class="glightbox" href="/media/media_3b226a031e380fd5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3b226a031e380fd5.png" width="436" height="58" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sort tasks</li>
+</ul>
+<p><a class="glightbox" href="/media/media_abee81602bcd0ed1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_abee81602bcd0ed1.png" width="109" height="51" /></a></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Actions<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> edit user (Editation)<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> login</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Password</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Name</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> E-mail</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Identification number</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vat</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> SAVE</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> CLOSE</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> deactivate (new function added)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Change status of task<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> new</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> open</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> data provided</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> data checked (green)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> data checked (red)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> returned</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> unassigned photos are not color* coded.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="612-super-admin-role">6.1.2 Super-admin role<a class="headerlink" href="#612-super-admin-role" title="Permanent link">#</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Super-admin role</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> manage existing ones</li>
+</ul>
+<p><a class="glightbox" href="/media/media_2f622df43b9c47f7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2f622df43b9c47f7.png" width="650" height="339" /></a></p>
+<p><a class="glightbox" href="/media/media_c637f365d899be84.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_c637f365d899be84.png" width="363" height="35" /></a></p>
+<p><a class="glightbox" href="/media/media_6415fd77e28ab712.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6415fd77e28ab712.png" width="650" height="175" /></a></p>
+<p>Fig. 35 Web Change Password</p>
+<h4 id="user-management">User management<a class="headerlink" href="#user-management" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_d5a09cf063d1bb1b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d5a09cf063d1bb1b.png" width="650" height="188" /></a></p>
+<p>Fig. 50 User management</p>
+<p><a class="glightbox" href="/media/media_f2c99e115a7738be.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2c99e115a7738be.png" width="194" height="49" /></a></p>
+<ul>
+<li>Sort users in the list by the selected column (by clicking on the column heading)</li>
+</ul>
+<p><a class="glightbox" href="/media/media_80ec801054b680cd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_80ec801054b680cd.png" width="650" height="115" /></a></p>
+<ul>
+<li>Open user detail</li>
+</ul>
+<p><a class="glightbox" href="/media/media_cb2a981135723b9c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_cb2a981135723b9c.png" width="328" height="347" /></a></p>
+<p><a class="glightbox" href="/media/media_54aef75f9d5d1ab1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_54aef75f9d5d1ab1.png" width="156" height="43" /></a>  </p>
+<ul>
+<li>
+<p>Add a new user</p>
+</li>
+<li>
+<p>By clicking on the button, a table is displayed in which it is necessary to fill in the data of the new user</p>
+</li>
+<li>
+<p>The creation of a new user is confirmed by pressing the Save button.</p>
+</li>
+<li>
+<p>The entered login and password will be used by the user to access the application.</p>
+</li>
+</ul>
+<p><a class="glightbox" href="/media/media_44bd570b5aeae909.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_44bd570b5aeae909.png" width="356" height="375" /></a></p>
+<ul>
+<li>Edit an existing user</li>
+</ul>
+<p><a class="glightbox" href="/media/media_efd2f8632ce2fcec.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_efd2f8632ce2fcec.png" width="157" height="54" /></a></p>
+<ul>
+<li>Clicking the button displays the same table as when creating a new user</li>
+</ul>
+<p>In this case, the table is pre * populated with the data of the selected user</p>
+<p>The data can be edited in the table (except for the login) and their modification can be confirmed with the <em>Save</em> button.</p>
+<p>If the password field is left blank,the password remains the same.</p>
+<h4 id="user-detail">User Detail<a class="headerlink" href="#user-detail" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_8372ad0c74abb659.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8372ad0c74abb659.png" width="650" height="323" /></a></p>
+<p>Fig. 51 Tasks  <em>Administrator</em></p>
+<p>This page is the same as in the user's approach, extended by the
+following:</p>
+<ul>
+<li>New task</li>
+</ul>
+<p><a class="glightbox" href="/media/media_6cc4e0f35e8a8b0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6cc4e0f35e8a8b0.png" width="142" height="45" /></a></p>
+<ul>
+<li>Clicking on the button displays a
+table in which it is necessary to fill in the data of the new task.
+The creation of a new task is confirmed by pressing the Save button.
+A new task is created with the status
+"<em>new</em>"</li>
+</ul>
+<p><a class="glightbox" href="/media/media_79ee220492ba9733.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_79ee220492ba9733.png" width="320" height="214" /></a></p>
+<ul>
+<li>
+<p>Bulk task approval function</p>
+</li>
+<li>
+<p>To perform a bulk approval, you must first mark the tasks to be approved. By checking the box for the required tasks in the right column of the table.</p>
+</li>
+<li>
+<p>Only tasks with the status <em>"data provided"</em>
+can be approved.</p>
+</li>
+<li>
+<p>After pressing the Approve in bulk button, a dialog box is displayed, where after pressing the OK button, the bulk action will be performed.</p>
+</li>
+<li>
+<p>Approval of tasks changes their status to <em>"data checked"</em> and the acceptance status to <em>"Approved".</em></p>
+</li>
+<li>
+<p>Photos</p>
+</li>
+<li>
+<p>The <em>decoration</em> <em>Examined</em> column graphically shows whether the photo checks were OK or not.</p>
+</li>
+<li>
+<p>This involves checking the correctness of the position and checking the originality of the photo.</p>
+</li>
+<li>
+<p>Complete control information is displayed in the task detail for each photo.</p>
+</li>
+</ul>
+<h4 id="task-detail">Task Detail<a class="headerlink" href="#task-detail" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_3ac0757ce4cb0269.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3ac0757ce4cb0269.png" width="650" height="340" /></a></p>
+<p>Fig. 51 Task detail – Administrator view</p>
+<p>This page is the same as in the user's approach, extended by the
+following:</p>
+<h4 id="task-detail-actions">Task Detail Actions<a class="headerlink" href="#task-detail-actions" title="Permanent link">#</a></h4>
+<ul>
+<li>
+<p>Approve <a class="glightbox" href="/media/media_d82c577df9fe8c14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d82c577df9fe8c14.png" width="43" height="40" /></a></p>
+</li>
+<li>
+<p>"data checked"<em>and the reception status</em></p>
+</li>
+<li>
+<p><em>"Approved".</em></p>
+</li>
+<li>
+<p>Reject <a class="glightbox" href="/media/media_3d98108fa20a4b0a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3d98108fa20a4b0a.png" width="39" height="40" /></a></p>
+<ul>
+<li>
+<p>This action is available with the status</p>
+</li>
+<li>
+<p><em>"data provided",</em> and results in the rejection of a task.</p>
+</li>
+<li>
+<p>After pressing the<em>Reject</em> button, a dialog box is displayed,where it is possible to enter a comment for rejection, and after pressing OK, the action will be performed.</p>
+</li>
+<li>
+<p>The result of the action is the setting of the status "data checked" and the acceptance status <em>"Rejected".</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Return to user <a class="glightbox" href="/media/media_77ccf5387648e807.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_77ccf5387648e807.png" width="44" height="40" /></a></p>
+</li>
+<li>
+<p>This action is available with the status <em>"data provided"</em>. It allows you to return the task to the user for completion.</p>
+</li>
+<li>
+<p>After pressing the Undo button, a dialog box is displayed, where it is possible to enter a comment to
+    be undone, and after pressing OK, the action will be performed.</p>
+</li>
+<li>
+<p>The result of the action is the setting of the status <em>"returned".</em></p>
+</li>
+<li>
+<p>Move to <em>"data provided"</em>
+<a class="glightbox" href="/media/media_788e386195526b6c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_788e386195526b6c.png" width="53" height="34" /></a>  </p>
+</li>
+<li>
+<p>This event is available with an <em>"open"</em>status. It allows you to move the task to <em>"data provided"</em> status.</p>
+</li>
+<li>
+<p>After pressing the Move button, a dialog box is displayed, where it is possible to enter a comment,
+    and after pressing OK, the action will be performed.</p>
+</li>
+<li>
+<p>The result of the action is the
+    setting of the status <em>"data provided".</em>
+    <a class="glightbox" href="/media/media_d7581e8254b0118.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d7581e8254b0118.png" width="51" height="34" /></a>  </p>
+</li>
+<li>
+<p>Delete</p>
+</li>
+<li>
+<p>This action is available with the status <em>"new".</em>
+    It allows you to delete a task.</p>
+</li>
+<li>
+<p>After pressing the Delete button, a dialog box is displayed, where after pressing OK the action is performed.</p>
+</li>
+<li>
+<p>The result of the action is deleting of the task.</p>
+</li>
+<li>
+<p>Verification of photos</p>
+</li>
+<li>
+<p>The <em>Examined</em> column graphically shows whether
+    the photo checks were OK or not.
+    <br>This involves checking the correctness of the position and checking the originality of the photo.</p>
+</li>
+<li>
+<p>View complete photo review information</p>
+</li>
+<li>
+<p>The table of photo data shows the results of the performed checks in color.</p>
+</li>
+</ul>
+<h4 id="super-administrator">Super-administrator<a class="headerlink" href="#super-administrator" title="Permanent link">#</a></h4>
+<p>After logging in, the Agency management page is displayed.</p>
+<p><a class="glightbox" href="/media/media_6a575c733558634e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6a575c733558634e.png" width="650" height="283" /></a></p>
+<p>Fig. 53 Agency management  </p>
+<h4 id="agency-list">Agency list<a class="headerlink" href="#agency-list" title="Permanent link">#</a></h4>
+<p>This page offers the following features:</p>
+<ul>
+<li>Add new agency</li>
+</ul>
+<p><a class="glightbox" href="/media/media_e5bf8f8484573e68.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e5bf8f8484573e68.png" width="160" height="46" /></a></p>
+<ul>
+<li>Clicking on the button displays a table in which it is necessary to fill in the name of the new agency.
+The creation of the agency is confirmed by pressing the <em>Save</em> button.</li>
+</ul>
+<p><a class="glightbox" href="/media/media_7753f656b8953d20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7753f656b8953d20.png" width="165" height="168" /></a></p>
+<p>Open detail of the agency by clicking on a row of specified agency.</p>
+<p><a class="glightbox" href="/media/media_1dbbf1a1eca58337.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_1dbbf1a1eca58337.png" width="183" height="32" /></a>  </p>
+<h4 id="agency-detail">Agency detail<a class="headerlink" href="#agency-detail" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_3bb56e251bcea433.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3bb56e251bcea433.png" width="650" height="140" /></a></p>
+<p>Fig. 54 Officers management</p>
+<h4 id="add-a-new-officer">Add a new officer<a class="headerlink" href="#add-a-new-officer" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_8a6179a89e95448e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8a6179a89e95448e.png" width="166" height="54" /></a>  </p>
+<ul>
+<li>
+<p>By clicking on the button, a table is displayed in which it is necessary to fill in the data of the new officer.
+The creation of a new officer is confirmed by pressing the <em>Save</em> button.</p>
+</li>
+<li>
+<p>The entered login and password will be used by the user to access the application.</p>
+</li>
+</ul>
+<p><a class="glightbox" href="/media/media_e19b0fd224032e86.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e19b0fd224032e86.png" width="241" height="248" /></a></p>
+<h4 id="edit-an-existing-officer">Edit an existing officer<a class="headerlink" href="#edit-an-existing-officer" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_b7bd5ab846f61c65.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_b7bd5ab846f61c65.png" width="91" height="40" /></a></p>
+<ul>
+<li>
+<p>Clicking the button displays the same table as when creating a new officer. In this case, the table
+is pre * populated with the data of the selected officer. The data can be edited in the table (except for the login) and their modification can be confirmed with the Save button.</p>
+</li>
+<li>
+<p>If the password field is left blank,the password remains the same.</p>
+</li>
+</ul>
+<h4 id="deactivate-an-existing-officer">Deactivate an existing officer<a class="headerlink" href="#deactivate-an-existing-officer" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_67cbd8759aa2d1c8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_67cbd8759aa2d1c8.png" width="114" height="34" /></a>  </p>
+<ul>
+<li>
+<p>After pressing the Deactivate button, a dialog box is displayed, where after pressing OK the action is performed.</p>
+</li>
+<li>
+<p>The result of the action is deactivation of the selected officer.</p>
+</li>
+<li>
+<p>The deactivated officer will be no more able to log in into application.</p>
+</li>
+</ul>
+<h3 id="appendix-a-hosting-and-installing-the-web-console">Appendix A: Hosting and installing the web console<a class="headerlink" href="#appendix-a-hosting-and-installing-the-web-console" title="Permanent link">#</a></h3>
+<h4 id="hosting-requirements">Hosting requirements<a class="headerlink" href="#hosting-requirements" title="Permanent link">#</a></h4>
+<ul>
+<li>Php7 engine</li>
+<li>MySQL 8 database server</li>
+<li>Apache2 webserver</li>
+</ul>
+<h4 id="server-resources-requirements">Server resources requirements<a class="headerlink" href="#server-resources-requirements" title="Permanent link">#</a></h4>
+<ul>
+<li>min 8GB RAM</li>
+<li>min 2 core cpu</li>
+<li>min 10GB disk space</li>
+</ul>
+<h4 id="installation-steps-for-the-webconsole">Installation steps for the webconsole<a class="headerlink" href="#installation-steps-for-the-webconsole" title="Permanent link">#</a></h4>
+<p>copy the web console files into the selected webroot directory create VirtualHost section in the Apache2 configuration and point it to selected directory
+make sure that there is set a directive DirectoryIndex index.php</p>
+<p>write the database name, database user and the corresponding password into the web console configuration file _includes.php</p>
+<div class="highlight"><pre><span></span><code>switch (SERVER) {
+  case &#39;UAT&#39;:
+    define(&#39;SYSTEM_HOST&#39;, &#39;&lt;https://mybohostname&gt;&#39;);
+    define(&#39;DB_TYPE&#39;, &#39;mysqli&#39;);
+    define(&#39;DB_HOST&#39;, &#39;localhost&#39;);
+    define(&#39;DB_USER&#39;, &#39;root&#39;);
+    define(&#39;DB_PASSWORD&#39;, &#39;xxxx&#39;);
+    define(&#39;DB_SCHEMA&#39;, &#39;egnss4all&#39;);
+    break;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code> case &#39;LOCALHOST&#39;:
+    define(&#39;SYSTEM_HOST&#39;, &#39;&lt;https://mybohostname&gt;&#39;);
+    define(&#39;DB_TYPE&#39;, &#39;mysqli&#39;);
+    define(&#39;DB_HOST&#39;, &#39;localhost&#39;);
+    define(&#39;DB_USER&#39;, &#39;xxxx&#39;);
+    define(&#39;DB_PASSWORD&#39;, &#39;xxxx&#39;);
+    define(&#39;DB_SCHEMA&#39;, &#39;egnss4all&#39;);
+    ini_set(&#39;display_errors&#39;, 0);
+    break;
+}
+</code></pre></div>
+<p>run <a href="&lt;http://your&gt; * domain.tld/"><u>http://your * domain.tld</u></a></p>
+<h3 id="appendix-b-developer-documentation">Appendix B: Developer Documentation<a class="headerlink" href="#appendix-b-developer-documentation" title="Permanent link">#</a></h3>
+<h4 id="technologies">Technologies<a class="headerlink" href="#technologies" title="Permanent link">#</a></h4>
+<ul>
+<li>OOP PHP (Object * Oriented Programming)</li>
+<li>TWIG templates</li>
+<li>MySQL database</li>
+<li>DIBI framework for DB query</li>
+<li>HTML, CSS, Javascript</li>
+<li>Bootstrap 4.4.1 framework, jquery framework</li>
+<li>Google maps API</li>
+<li>MPDF framework for generating PDF</li>
+<li>html2canvas.js plugin</li>
+</ul>
+<h4 id="classes-description">Classes description<a class="headerlink" href="#classes-description" title="Permanent link">#</a></h4>
+<ul>
+<li>Index</li>
+<li>managing farmers</li>
+<li>loading farmer list and tasks</li>
+<li>login</li>
+<li>login user</li>
+<li>logout user</li>
+<li>verifying users</li>
+<li>task</li>
+<li>adding tasks</li>
+<li>loading task info and photos</li>
+<li>accepting, declining and deleting tasks</li>
+<li>changing task status</li>
+<li>loading photos and photos metadata</li>
+<li>loading shapes</li>
+<li>assign unassigned photos to task</li>
+<li>generating PDF</li>
+<li>user</li>
+<li>managing users and roles</li>
+<li>loading the unassigned photos and tasks of users</li>
+<li>managing photo rotation</li>
+</ul>
+<h4 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">#</a></h4>
+<ul>
+<li>CSS</li>
+<li>cascade styles for web pages</li>
+<li>ENGINE</li>
+<li>framework and classes</li>
+<li>FONTS</li>
+<li>fonts for web pages</li>
+<li>IMG</li>
+<li>images for web</li>
+<li>JS</li>
+<li>javascript files for web and map</li>
+<li>PHOTOS</li>
+<li>photos downloaded from phones</li>
+<li>TEMPLATES</li>
+<li>TWIG templates for web</li>
+<li>VENDOR</li>
+<li>frameworks</li>
+</ul>
+<h3 id="web-services-and-database">Web Services and Database<a class="headerlink" href="#web-services-and-database" title="Permanent link">#</a></h3>
+<p>Below is a technical overview of the implemented web services for the PIC2BIM application and their features.</p>
+<h5 id="installation-web-services">Installation Web Services<a class="headerlink" href="#installation-web-services" title="Permanent link">#</a></h5>
+<p><a href="https://github.com/buildvoc/EGNSS4ALLSERVICES"><u>https://github.com/buildvoc/EGNSS4ALLSERVICES</u></a></p>
+<ul>
+<li>Install PHP version 8, enable GDI module in PHP</li>
+<li>Install Apache2</li>
+<li>Install MySql Database following instructions on <a href="https://github.com/buildvoc/EGNSS4ALLDATABASE"><u>https://github.com/buildvoc/EGNSS4ALLDATABASE</u></a></li>
+<li>Copy project files in a web accessible directory of Apache</li>
+<li>Modify the file engine/db_fx.php accordingly to your MySql database setup</li>
+<li>Create a writable by apache directory named "photos4all" on the same level of the project main path</li>
+</ul>
+<h4 id="installation-database">Installation Database<a class="headerlink" href="#installation-database" title="Permanent link">#</a></h4>
+<ul>
+<li>Install MySql database 8</li>
+<li>Create a Database named "egnss4all"</li>
+<li>Import sql file into mysql to init database</li>
+</ul>
+<h4 id="check-user-by-login-and-pswd">check user by login and pswd<a class="headerlink" href="#check-user-by-login-and-pswd" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_login.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_login.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>login – string(255)</li>
+<li>pswd  *  string(255)</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>user – number – user ID for login, if exists</li>
+</ul>
+</li>
+</ul>
+<h4 id="sends-geometry-shapes-for-rectangle">sends geometry shapes for rectangle<a class="headerlink" href="#sends-geometry-shapes-for-rectangle" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_shapes.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_shapes.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>max_lat – float</li>
+<li>min_lat – float</li>
+<li>max_lng – float</li>
+<li>min_lng – float</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>shapes – array</li>
+<li>identificator – string – shape identificator</li>
+<li>wgs_geometry – json – geometry of shape</li>
+</ul>
+</li>
+</ul>
+<h4 id="sends-photos-for-task-or-user">sends photos for task or user<a class="headerlink" href="#sends-photos-for-task-or-user" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_task_photos.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_task_photos.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>task_id – number – task identificator</li>
+<li>user_id – number – user identificator</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>photos – array</li>
+<li>note – string – user note</li>
+<li>lat – float – latitude of photo</li>
+<li>lng – float – longitute of photo</li>
+<li>photo_heading – number – photo azimuth</li>
+<li>created – datetime – date and time of photo creation</li>
+<li>photo – string – base64 encoded photo</li>
+<li>digest – string – hash of photo</li>
+</ul>
+</li>
+</ul>
+<h4 id="sends-tasks-for-user">sends tasks for user<a class="headerlink" href="#sends-tasks-for-user" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_tasks.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_tasks.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>user_id – number – user identificator</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>tasks – array</li>
+<li>id – number – task identificator</li>
+<li>status – string – task status</li>
+<li>name – string – task name</li>
+<li>text – string – description of task</li>
+<li>text_returned – string – description why is returned</li>
+<li>date_created – datetime – date of create task</li>
+<li>task_due_date – datetime – task due date</li>
+<li>note – string – task note</li>
+<li>number_of_photos – number – number of photos for task</li>
+<li>flag_valid – string – task is accepted</li>
+<li>flag_invalid – string – task is declined</li>
+<li>photos_ids – array of numbers – IDs of task photos</li>
+</ul>
+</li>
+</ul>
+<h4 id="receive-task-data-from-phone">receive task data from phone<a class="headerlink" href="#receive-task-data-from-phone" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_update.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_update.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters</li>
+<li>task_id – number – task identificator</li>
+<li>user_id – number – user identificator</li>
+<li>status – string – task statuses</li>
+<li>note – string – task note</li>
+<li>photos – array<ul>
+<li>note – string – photo note</li>
+<li>lat – float – photo latitude</li>
+<li>lng – float – photo longitude</li>
+<li>altitude</li>
+<li>bearing</li>
+<li>magnetic_azimuth</li>
+<li>photo_heading</li>
+<li>pitch</li>
+<li>roll</li>
+<li>photo_angle</li>
+<li>orientation</li>
+<li>horizontalViewAngle</li>
+<li>verticalViewAngle</li>
+<li>accuracy</li>
+<li>deviceManufacture</li>
+<li>deviceModel</li>
+<li>devicePlatform</li>
+<li>deviceVersion</li>
+<li>satsInfo</li>
+<li>extraSatCount</li>
+<li>NMEAMessage</li>
+<li>networkInfo</li>
+<li>created – datetime – date of photo creation</li>
+<li>digest – string – photo hash</li>
+<li>efkLatGpsL1</li>
+<li>efkLngGpsL1</li>
+<li>efkAltGpsL1</li>
+<li>efkTimeGpsL1</li>
+<li>efkLatGpsL5</li>
+<li>efkLngGpsL5</li>
+<li>efkAltGpsL5</li>
+<li>efkTimeGpsL5</li>
+<li>efkLatGpsIf</li>
+<li>efkLngGpsIf</li>
+<li>efkAltGpsIf</li>
+<li>efkTimeGpsIf</li>
+<li>efkLatGalE1</li>
+<li>efkLngGalE1</li>
+<li>efkAltGalE1</li>
+<li>efkTimeGalE1</li>
+<li>efkLatGalE5</li>
+<li>efkLng GalE5</li>
+<li>efkAlt GalE5</li>
+<li>efkTimeGalE5</li>
+<li>efkLatGalIf</li>
+<li>efkLngGalIf</li>
+<li>efkAltGalIf</li>
+<li>efkTimeGalIf</li>
+<li>photo – string – base64 encoded photo</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+</ul>
+</li>
+</ul>
+<h4 id="sends-paths-for-user">sends paths for user<a class="headerlink" href="#sends-paths-for-user" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_get_paths.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_get_paths.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>user_id – number – user identificator</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON</li>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>paths – array</li>
+<li>id – number – identificator</li>
+<li>name  *  string</li>
+<li>start – datetime – start of tracking datetime</li>
+<li>end – datetime – end of tracking datetime</li>
+<li>area – float – path area in m2</li>
+<li>device_manufacture  *  string</li>
+<li>device_model  *  string</li>
+<li>device_platform  *  string</li>
+<li>device_version  *  string</li>
+<li>points – array<ul>
+<li>id – number – identificator</li>
+<li>lat  *  float</li>
+<li>lng  *  float</li>
+<li>altitude  *  float</li>
+<li>accuracy  *  float</li>
+<li>created  *  datetime</li>
+</ul>
+</li>
+</ul>
+<h4 id="sends-photo-by-id">sends photo by ID<a class="headerlink" href="#sends-photo-by-id" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_get_photo.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_get_photo.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>photo_id – number – photo identificator</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>photo – object</li>
+<li>note – string – photo note</li>
+<li>lat – float – photo lattitude</li>
+<li>lng – float – photo longitude</li>
+<li>photo_heading – number – heading in degrees</li>
+<li>created – datetime</li>
+<li>photo – string – base64 encoded photo</li>
+<li>digest – string – photo hash</li>
+</ul>
+</li>
+</ul>
+<h4 id="receive-path-from-phone">receive path from phone<a class="headerlink" href="#receive-path-from-phone" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_path.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_path.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>user_id – number – user identificator</li>
+<li>name  *  string</li>
+<li>start – datetime – start of tracking datetime</li>
+<li>end – datetime – end of tracking datetime</li>
+<li>area – float – path area in m2</li>
+<li>device_manufacture  *  string</li>
+<li>device_model  *  string</li>
+<li>device_platform  *  string</li>
+<li>device_version  *  string</li>
+<li>points – array</li>
+<li>lat  *  float</li>
+<li>lng  *  float</li>
+<li>altitude  *  float</li>
+<li>accuracy  *  float</li>
+<li>created  *  datetime</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>path_id – number – ID of received path</li>
+</ul>
+</li>
+</ul>
+<h4 id="receive-photo-data-from-phone">receive photo data from phone<a class="headerlink" href="#receive-photo-data-from-phone" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_photo.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_photo.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>task_id – number – task identificator</li>
+<li>user_id – number – user identificator</li>
+<li>photos – array</li>
+<li>note – string – photo note</li>
+<li>lat – float – photo latitude</li>
+<li>lng – float – photo longitude</li>
+<li>centroidLat</li>
+<li>centroidLng</li>
+<li>altitude</li>
+<li>bearing</li>
+<li>magnetic_azimuth</li>
+<li>photo_heading</li>
+<li>pitch</li>
+<li>roll</li>
+<li>photo_angle</li>
+<li>orientation</li>
+<li>horizontalViewAngle</li>
+<li>verticalViewAngle</li>
+<li>accuracy</li>
+<li>deviceManufacture</li>
+<li>deviceModel</li>
+<li>devicePlatform</li>
+<li>deviceVersion</li>
+<li>satsInfo</li>
+<li>extraSatCount</li>
+<li>NMEAMessage</li>
+<li>networkInfo</li>
+<li>created – datetime – date of photo creation</li>
+<li>digest – string – photo hash</li>
+<li>efkLatGpsL1</li>
+<li>efkLngGpsL1</li>
+<li>efkAltGpsL1</li>
+<li>efkTimeGpsL1</li>
+<li>efkLatGpsL5</li>
+<li>efkLngGpsL5</li>
+<li>efkAltGpsL5</li>
+<li>efkTimeGpsL5</li>
+<li>efkLatGpsIf</li>
+<li>efkLngGpsIf</li>
+<li>efkAltGpsIf</li>
+<li>efkTimeGpsIf</li>
+<li>efkLatGalE1</li>
+<li>efkLngGalE1</li>
+<li>efkAltGalE1</li>
+<li>efkTimeGalE1</li>
+<li>efkLatGalE5</li>
+<li>efkLng GalE5</li>
+<li>efkAlt GalE5</li>
+<li>efkTimeGalE5</li>
+<li>efkLatGalIf</li>
+<li>efkLngGalIf</li>
+<li>efkAltGalIf</li>
+<li>efkTimeGalIf</li>
+<li>photo – string – base64 encoded photo</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>photo_id – number – ID of received photo</li>
+</ul>
+</li>
+</ul>
+<h4 id="receive-task-data-from-phone_1">receive task data from phone<a class="headerlink" href="#receive-task-data-from-phone_1" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_status.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_status.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>task_id – number – task identificator</li>
+<li>status – string – task statuses</li>
+<li>note – string – task note</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+</ul>
+</li>
+</ul>
+<h4 id="sends-ids-of-unassigned-photos-for-user">sends IDs of unassigned photos for user<a class="headerlink" href="#sends-ids-of-unassigned-photos-for-user" title="Permanent link">#</a></h4>
+<p><a href="https://pic2bim.co.uk/egnss4allservices/comm_unassigned.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_unassigned.php</u></a></p>
+<ul>
+<li>input</li>
+<li>HTTPS, POST</li>
+<li>parameters<ul>
+<li>user_id – number – user identificator</li>
+</ul>
+</li>
+<li>output</li>
+<li>JSON<ul>
+<li>status – string  *  ok/error</li>
+<li>error_msg – string – error message if an error occurs</li>
+<li>photos_ids – array of numbers – IDs of unassigned photos</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+      
+        <script src="../assets/javascripts/obsidian_tags.js"></script>
+      
+        <script src="../assets/javascripts/interactive_graph.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

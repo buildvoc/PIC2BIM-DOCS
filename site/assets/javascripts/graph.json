@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Getting started",
+      "symbolSize": 0,
+      "value": "/"
+    },
+    {
+      "id": "1",
+      "name": "Mobile Application - iOS",
+      "symbolSize": 0,
+      "value": "/android/"
+    },
+    {
+      "id": "2",
+      "name": "Building attributes",
+      "symbolSize": 0,
+      "value": "/building-attributes/"
+    },
+    {
+      "id": "3",
+      "name": "Mobile Application - iOS",
+      "symbolSize": 0,
+      "value": "/ios/"
+    },
+    {
+      "id": "4",
+      "name": "Web Console Interface",
+      "symbolSize": 0,
+      "value": "/web-console-tasklist/"
+    },
+    {
+      "id": "5",
+      "name": "Web Console Interface",
+      "symbolSize": 0,
+      "value": "/web-console/"
+    },
+    {
+      "id": "6",
+      "name": "Concept",
+      "symbolSize": 0,
+      "value": "/guides/Concept/"
+    },
+    {
+      "id": "7",
+      "name": "Field Inspection Onsite",
+      "symbolSize": 0,
+      "value": "/guides/field-inspection-onsite/"
+    },
+    {
+      "id": "8",
+      "name": "Field Inspection Supervisor",
+      "symbolSize": 0,
+      "value": "/guides/field-inspection-supervisor/"
+    },
+    {
+      "id": "9",
+      "name": "How to Guides",
+      "symbolSize": 0,
+      "value": "/guides/guides/"
+    }
+  ],
+  "links": []
+}

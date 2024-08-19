@@ -19,26 +19,49 @@ theme:
         name: Switch to light mode
         primary: blue
   features:
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
     - navigation.expand
     - navigation.indexes
-    - content.tabs.link
+    # navigation.instant      # WARN: breaks some javascripts
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+
+plugins:
+  - material/social
+  - search
+  - callouts
+  - obsidian-interactive-graph
+  - obsidian-bridge
+  - glightbox
 
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
+  - admonition
+  - attr_list
+  - codehilite
+  - md_in_html
+  - def_list
+  - sane_lists
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - toc:
+      permalink: "#"
 
-plugins:
-  - obsidian-interactive-graph
-  #- callouts
-  #- obsidian-support
-  #- obsidian-bridge
-  - material/social
-  - search
+extra_css:
+  - assets/stylesheets/obsidian_tags.css
+  - assets/stylesheets/interactive_graph.css
 
 extra_javascript:
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  - assets/javascripts/obsidian_tags.js
   - assets/javascripts/interactive_graph.js
-
-extra_css:
-  - assets/stylesheets/interactive_graph.css

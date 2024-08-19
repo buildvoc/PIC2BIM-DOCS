@@ -13,8 +13,10 @@
         <link rel="canonical" href="https://docs.pic2bim.co.uk/web-console/">
       
       
-        <link rel="prev" href="../android/">
+        <link rel="prev" href="../web-console-tasklist/">
       
+      
+        <link rel="next" href="../guides/Concept/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -47,6 +49,10 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../assets/stylesheets/obsidian_tags.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/interactive_graph.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -81,7 +87,16 @@
       
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -151,7 +166,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
       </label>
     
   
@@ -161,7 +176,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
       </label>
     
   
@@ -190,11 +205,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -257,7 +279,47 @@
         
   
   <span class="md-ellipsis">
-    Introduction & Quick Start
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobile Application - iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../building-attributes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Building attributes
   </span>
   
 
@@ -293,11 +355,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../android/" class="md-nav__link">
+      <a href="../web-console-tasklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Mobile Application - Android
+    Web Console Interface
   </span>
   
 
@@ -324,7 +386,7 @@
           
   
   <span class="md-ellipsis">
-    Web Console
+    Web Console Interface
   </span>
   
 
@@ -335,7 +397,7 @@
         
   
   <span class="md-ellipsis">
-    Web Console
+    Web Console Interface
   </span>
   
 
@@ -408,99 +470,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#task-list" class="md-nav__link">
+  <a href="#21-task-list" class="md-nav__link">
     <span class="md-ellipsis">
-      Task List
+      2.1 Task List
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#open-task-detail" class="md-nav__link">
+  <a href="#211-open-task-detail" class="md-nav__link">
     <span class="md-ellipsis">
-      Open task detail
+      2.1.1 Open task detail
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#search-for-tasks" class="md-nav__link">
+  <a href="#212-search-for-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Search for tasks
+      2.1.2 Search for tasks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter-tasks" class="md-nav__link">
+  <a href="#213-filter-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Filter tasks
+      2.1.3 Filter tasks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sort-tasks" class="md-nav__link">
+  <a href="#214-sort-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Sort tasks
+      2.1.4 Sort tasks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#display-a-page-with-unassigned-photos" class="md-nav__link">
+  <a href="#215-display-a-page-with-unassigned-photos" class="md-nav__link">
     <span class="md-ellipsis">
-      Display a page with unassigned photos
+      2.1.5 Display a page with unassigned photos
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#display-a-page-with-paths" class="md-nav__link">
+  <a href="#216-display-a-page-with-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Display a page with paths
+      2.1.6 Display a page with paths
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#task-detail-page" class="md-nav__link">
+  <a href="#220-task-detail-page" class="md-nav__link">
     <span class="md-ellipsis">
-      Task Detail page
+      2.2.0 Task Detail page
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#photos-can-be-rotated" class="md-nav__link">
+  <a href="#221-photos-can-be-rotated" class="md-nav__link">
     <span class="md-ellipsis">
-      Photos can be rotated
+      2.2.1 Photos can be rotated
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#click-on-the-photo-to-open-the-photo-gallery" class="md-nav__link">
+  <a href="#222-click-on-the-photo-to-open-the-photo-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Click on the photo to open the Photo Gallery
+      2.2.2 Click on the photo to open the Photo Gallery
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user-can-select-photos-for-export-to-pdf" class="md-nav__link">
+  <a href="#223-user-can-select-photos-for-export-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      User can select photos for export to PDF
+      2.2.3 User can select photos for export to PDF
     </span>
   </a>
   
@@ -512,91 +574,91 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#photos" class="md-nav__link">
+  <a href="#30-photos" class="md-nav__link">
     <span class="md-ellipsis">
-      Photos
+      3.0 Photos
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Photos">
+    <nav class="md-nav" aria-label="3.0 Photos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#standalone-photos-gallery" class="md-nav__link">
+  <a href="#31-standalone-photos-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Standalone photos gallery
+      3.1 Standalone photos gallery
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rotation" class="md-nav__link">
+  <a href="#311-rotation" class="md-nav__link">
     <span class="md-ellipsis">
-      Rotation
+      3.1.1 Rotation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete" class="md-nav__link">
+  <a href="#312-delete" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete
+      3.1.2 Delete
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#select-for-an-action" class="md-nav__link">
+  <a href="#313-select-for-an-action" class="md-nav__link">
     <span class="md-ellipsis">
-      Select for an action
+      3.1.3 Select for an action
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#when-selecting-bulk-actions-the-following-options-are-available" class="md-nav__link">
+  <a href="#314-when-selecting-bulk-actions-the-following-options-are-available" class="md-nav__link">
     <span class="md-ellipsis">
-      When selecting bulk actions, the following options are available
+      3.1.4 When selecting bulk actions, the following options are available
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#displays-a-page-where-you-can-select-the-task" class="md-nav__link">
+  <a href="#315-displays-a-page-where-you-can-select-the-task" class="md-nav__link">
     <span class="md-ellipsis">
-      Displays a page where you can select the task:
+      3.1.5 Displays a page where you can select the task:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete-selected-photos" class="md-nav__link">
+  <a href="#316-delete-selected-photos" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete selected photos
+      3.1.6 Delete selected photos
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-all-to-pdf" class="md-nav__link">
+  <a href="#317-export-all-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      Export all to PDF
+      3.1.7 Export all to PDF
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-selected-to-pdf" class="md-nav__link">
+  <a href="#318-export-selected-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      Export selected to PDF
+      3.1.8 Export selected to PDF
     </span>
   </a>
   
@@ -612,9 +674,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#control-panel" class="md-nav__link">
+  <a href="#319-control-panel" class="md-nav__link">
     <span class="md-ellipsis">
-      Control panel
+      3.1.9 Control panel
     </span>
   </a>
   
@@ -626,28 +688,28 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#paths" class="md-nav__link">
+  <a href="#40-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Paths
+      4.0 Paths
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Paths">
+    <nav class="md-nav" aria-label="4.0 Paths">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#user-paths" class="md-nav__link">
+  <a href="#41-user-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      User paths
+      4.1 User paths
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#generating-pdf-documents" class="md-nav__link">
+  <a href="#411-generating-pdf-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      Generating PDF documents
+      4.1.1 Generating PDF documents
     </span>
   </a>
   
@@ -659,64 +721,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#map-view" class="md-nav__link">
+  <a href="#50-map" class="md-nav__link">
     <span class="md-ellipsis">
-      Map view
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Map view">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zoom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Zoom
+      5.0 Map
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#coded-markers" class="md-nav__link">
+  <a href="#60-administrator" class="md-nav__link">
     <span class="md-ellipsis">
-      Coded markers
+      6.0 Administrator
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#middle-zoom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Middle zoom
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detail-zoom-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      Detail zoom in
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#administrator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Administrator
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Administrator">
+    <nav class="md-nav" aria-label="6.0 Administrator">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -732,15 +752,6 @@
   <a href="#user-detail" class="md-nav__link">
     <span class="md-ellipsis">
       User Detail
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-new-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create a new task
     </span>
   </a>
   
@@ -764,11 +775,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#super-administrator" class="md-nav__link">
     <span class="md-ellipsis">
@@ -776,8 +782,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Super-administrator">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#agency-list" class="md-nav__link">
@@ -819,33 +824,6 @@
   <a href="#deactivate-an-existing-officer" class="md-nav__link">
     <span class="md-ellipsis">
       Deactivate an existing officer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create new purpose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-an-existing-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edit an existing purpose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deactivate-an-existing-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deactivate an existing purpose
     </span>
   </a>
   
@@ -1085,6 +1063,149 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/Concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/field-inspection-onsite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Onsite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/field-inspection-supervisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1163,99 +1284,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#task-list" class="md-nav__link">
+  <a href="#21-task-list" class="md-nav__link">
     <span class="md-ellipsis">
-      Task List
+      2.1 Task List
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#open-task-detail" class="md-nav__link">
+  <a href="#211-open-task-detail" class="md-nav__link">
     <span class="md-ellipsis">
-      Open task detail
+      2.1.1 Open task detail
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#search-for-tasks" class="md-nav__link">
+  <a href="#212-search-for-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Search for tasks
+      2.1.2 Search for tasks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter-tasks" class="md-nav__link">
+  <a href="#213-filter-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Filter tasks
+      2.1.3 Filter tasks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sort-tasks" class="md-nav__link">
+  <a href="#214-sort-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Sort tasks
+      2.1.4 Sort tasks
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#display-a-page-with-unassigned-photos" class="md-nav__link">
+  <a href="#215-display-a-page-with-unassigned-photos" class="md-nav__link">
     <span class="md-ellipsis">
-      Display a page with unassigned photos
+      2.1.5 Display a page with unassigned photos
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#display-a-page-with-paths" class="md-nav__link">
+  <a href="#216-display-a-page-with-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Display a page with paths
+      2.1.6 Display a page with paths
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#task-detail-page" class="md-nav__link">
+  <a href="#220-task-detail-page" class="md-nav__link">
     <span class="md-ellipsis">
-      Task Detail page
+      2.2.0 Task Detail page
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#photos-can-be-rotated" class="md-nav__link">
+  <a href="#221-photos-can-be-rotated" class="md-nav__link">
     <span class="md-ellipsis">
-      Photos can be rotated
+      2.2.1 Photos can be rotated
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#click-on-the-photo-to-open-the-photo-gallery" class="md-nav__link">
+  <a href="#222-click-on-the-photo-to-open-the-photo-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Click on the photo to open the Photo Gallery
+      2.2.2 Click on the photo to open the Photo Gallery
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user-can-select-photos-for-export-to-pdf" class="md-nav__link">
+  <a href="#223-user-can-select-photos-for-export-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      User can select photos for export to PDF
+      2.2.3 User can select photos for export to PDF
     </span>
   </a>
   
@@ -1267,91 +1388,91 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#photos" class="md-nav__link">
+  <a href="#30-photos" class="md-nav__link">
     <span class="md-ellipsis">
-      Photos
+      3.0 Photos
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Photos">
+    <nav class="md-nav" aria-label="3.0 Photos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#standalone-photos-gallery" class="md-nav__link">
+  <a href="#31-standalone-photos-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Standalone photos gallery
+      3.1 Standalone photos gallery
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rotation" class="md-nav__link">
+  <a href="#311-rotation" class="md-nav__link">
     <span class="md-ellipsis">
-      Rotation
+      3.1.1 Rotation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete" class="md-nav__link">
+  <a href="#312-delete" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete
+      3.1.2 Delete
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#select-for-an-action" class="md-nav__link">
+  <a href="#313-select-for-an-action" class="md-nav__link">
     <span class="md-ellipsis">
-      Select for an action
+      3.1.3 Select for an action
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#when-selecting-bulk-actions-the-following-options-are-available" class="md-nav__link">
+  <a href="#314-when-selecting-bulk-actions-the-following-options-are-available" class="md-nav__link">
     <span class="md-ellipsis">
-      When selecting bulk actions, the following options are available
+      3.1.4 When selecting bulk actions, the following options are available
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#displays-a-page-where-you-can-select-the-task" class="md-nav__link">
+  <a href="#315-displays-a-page-where-you-can-select-the-task" class="md-nav__link">
     <span class="md-ellipsis">
-      Displays a page where you can select the task:
+      3.1.5 Displays a page where you can select the task:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete-selected-photos" class="md-nav__link">
+  <a href="#316-delete-selected-photos" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete selected photos
+      3.1.6 Delete selected photos
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-all-to-pdf" class="md-nav__link">
+  <a href="#317-export-all-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      Export all to PDF
+      3.1.7 Export all to PDF
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-selected-to-pdf" class="md-nav__link">
+  <a href="#318-export-selected-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      Export selected to PDF
+      3.1.8 Export selected to PDF
     </span>
   </a>
   
@@ -1367,9 +1488,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#control-panel" class="md-nav__link">
+  <a href="#319-control-panel" class="md-nav__link">
     <span class="md-ellipsis">
-      Control panel
+      3.1.9 Control panel
     </span>
   </a>
   
@@ -1381,28 +1502,28 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#paths" class="md-nav__link">
+  <a href="#40-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Paths
+      4.0 Paths
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Paths">
+    <nav class="md-nav" aria-label="4.0 Paths">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#user-paths" class="md-nav__link">
+  <a href="#41-user-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      User paths
+      4.1 User paths
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#generating-pdf-documents" class="md-nav__link">
+  <a href="#411-generating-pdf-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      Generating PDF documents
+      4.1.1 Generating PDF documents
     </span>
   </a>
   
@@ -1414,64 +1535,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#map-view" class="md-nav__link">
+  <a href="#50-map" class="md-nav__link">
     <span class="md-ellipsis">
-      Map view
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Map view">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zoom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Zoom
+      5.0 Map
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#coded-markers" class="md-nav__link">
+  <a href="#60-administrator" class="md-nav__link">
     <span class="md-ellipsis">
-      Coded markers
+      6.0 Administrator
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#middle-zoom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Middle zoom
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detail-zoom-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      Detail zoom in
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#administrator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Administrator
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Administrator">
+    <nav class="md-nav" aria-label="6.0 Administrator">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1487,15 +1566,6 @@
   <a href="#user-detail" class="md-nav__link">
     <span class="md-ellipsis">
       User Detail
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-new-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create a new task
     </span>
   </a>
   
@@ -1519,11 +1589,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#super-administrator" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1531,8 +1596,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Super-administrator">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#agency-list" class="md-nav__link">
@@ -1574,33 +1638,6 @@
   <a href="#deactivate-an-existing-officer" class="md-nav__link">
     <span class="md-ellipsis">
       Deactivate an existing officer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-new-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create new purpose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-an-existing-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Edit an existing purpose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deactivate-an-existing-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deactivate an existing purpose
     </span>
   </a>
   
@@ -1847,12 +1884,12 @@
                   
 
 
-  <h1>Web Console</h1>
+  <h1>Web Console Interface</h1>
 
-<h2 id="web-console-interface">Web Console Interface</h2>
+<h2 id="web-console-interface">Web Console Interface<a class="headerlink" href="#web-console-interface" title="Permanent link">#</a></h2>
 <p>The web console is accessible through the following link:
 <a href="https://www.pic2bim.co.uk/"><u>https://www.pic2bim.co.uk/</u></a></p>
-<h4 id="user-roles">User roles</h4>
+<h4 id="user-roles">User roles<a class="headerlink" href="#user-roles" title="Permanent link">#</a></h4>
 <p>User role</p>
 <ul>
 <li>Have access to his tasks and photos, but is not able to do any operations.</li>
@@ -1871,96 +1908,96 @@
 <p>Does not have access to standard application.</p>
 </li>
 </ul>
-<h5 id="login-screen">Login screen</h5>
+<h5 id="login-screen">Login screen<a class="headerlink" href="#login-screen" title="Permanent link">#</a></h5>
 <p>To log in to the web interface, enter your login details.</p>
-<p><img src="/media/media_ce40e37ac8e7d2e8.png" width="353" height="352" />  </p>
+<p><a class="glightbox" href="/media/media_ce40e37ac8e7d2e8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_ce40e37ac8e7d2e8.png" width="353" height="352" /></a>  </p>
 <p>Fig. 34 Web Console login</p>
-<h5 id="change-password">Change Password</h5>
+<h5 id="change-password">Change Password<a class="headerlink" href="#change-password" title="Permanent link">#</a></h5>
 <p>After logging in to the platform, every user can change his password to
 a more fitting one using the button in the top right area of the
 console.</p>
-<p><img src="/media/media_2f622df43b9c47f7.png" width="650" height="339" /></p>
-<p><img src="/media/media_c637f365d899be84.png" width="363" height="35" /></p>
+<p><a class="glightbox" href="/media/media_2f622df43b9c47f7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2f622df43b9c47f7.png" width="650" height="339" /></a></p>
+<p><a class="glightbox" href="/media/media_c637f365d899be84.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_c637f365d899be84.png" width="363" height="35" /></a></p>
 <p>To change the current logged user password, fill in a new password and
 the confirmation in the change password form. A message will warn you of
 your action and if confirmed your password will change to the new one.</p>
-<p><img src="/media/media_6415fd77e28ab712.png" width="650" height="175" /></p>
+<p><a class="glightbox" href="/media/media_6415fd77e28ab712.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6415fd77e28ab712.png" width="650" height="175" /></a></p>
 <p>Fig. 35 Web Change Password</p>
 <p><b>User access</b></p>
 <p>The default page after login is the Task list.</p>
-<h3 id="tasks">Tasks</h3>
-<h4 id="task-list">Task List</h4>
+<h3 id="tasks">Tasks<a class="headerlink" href="#tasks" title="Permanent link">#</a></h3>
+<h4 id="21-task-list">2.1 Task List<a class="headerlink" href="#21-task-list" title="Permanent link">#</a></h4>
 <p>The bottom part shows the assigned tasks, which can be sorted, filtered
 and searched. In the top part, points representing individual tasks are
 displayed on the map. Map is shown by default.</p>
-<p><img src="/media/media_8372ad0c74abb659.png" width="650" height="323" /></p>
+<p><a class="glightbox" href="/media/media_8372ad0c74abb659.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8372ad0c74abb659.png" width="650" height="323" /></a></p>
 <p>Fig.36 Tasks and Map</p>
 <p>The following options are available for the user:</p>
-<h4 id="open-task-detail">Open task detail</h4>
+<h4 id="211-open-task-detail">2.1.1 Open task detail<a class="headerlink" href="#211-open-task-detail" title="Permanent link">#</a></h4>
 <ul>
 <li>(by clicking on the selected row in the list)</li>
 </ul>
-<p><img src="/media/media_f2c99e115a7738be.png" width="183" height="47" /></p>
-<p><img src="/media/media_e91744cf2298e587.png" width="650" height="27" /></p>
-<h4 id="search-for-tasks">Search for tasks</h4>
+<p><a class="glightbox" href="/media/media_f2c99e115a7738be.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2c99e115a7738be.png" width="183" height="47" /></a></p>
+<p><a class="glightbox" href="/media/media_e91744cf2298e587.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e91744cf2298e587.png" width="650" height="27" /></a></p>
+<h4 id="212-search-for-tasks">2.1.2 Search for tasks<a class="headerlink" href="#212-search-for-tasks" title="Permanent link">#</a></h4>
 <ul>
 <li>by the specific text</li>
 </ul>
-<h4 id="filter-tasks">Filter tasks</h4>
+<h4 id="213-filter-tasks">2.1.3 Filter tasks<a class="headerlink" href="#213-filter-tasks" title="Permanent link">#</a></h4>
 <ul>
 <li>by status (by clicking on the selected status)</li>
 </ul>
-<p><img src="/media/media_3b226a031e380fd5.png" width="436" height="58" /></p>
-<h4 id="sort-tasks">Sort tasks</h4>
+<p><a class="glightbox" href="/media/media_3b226a031e380fd5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3b226a031e380fd5.png" width="436" height="58" /></a></p>
+<h4 id="214-sort-tasks">2.1.4 Sort tasks<a class="headerlink" href="#214-sort-tasks" title="Permanent link">#</a></h4>
 <ul>
 <li>in a list by the selected column (by clicking on the column heading) or according to the date of completion of the task
 (with the button "Passed to the end")</li>
 </ul>
-<p><img src="/media/media_abee81602bcd0ed1.png" width="109" height="51" />
-<img src="/media/media_497ed878a3764f23.png" width="627" height="64" />  </p>
-<p><img src="/media/media_3ded08d38d0048d1.png" width="176" height="32" />  </p>
-<h4 id="display-a-page-with-unassigned-photos">Display a page with unassigned photos</h4>
-<p><img src="/media/media_7b6598d7f4cc6bf1.png" width="109" height="31" />  </p>
-<h4 id="display-a-page-with-paths">Display a page with paths</h4>
+<p><a class="glightbox" href="/media/media_abee81602bcd0ed1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_abee81602bcd0ed1.png" width="109" height="51" /></a>
+<a class="glightbox" href="/media/media_497ed878a3764f23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_497ed878a3764f23.png" width="627" height="64" /></a>  </p>
+<p><a class="glightbox" href="/media/media_3ded08d38d0048d1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3ded08d38d0048d1.png" width="176" height="32" /></a>  </p>
+<h4 id="215-display-a-page-with-unassigned-photos">2.1.5 Display a page with unassigned photos<a class="headerlink" href="#215-display-a-page-with-unassigned-photos" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_7b6598d7f4cc6bf1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7b6598d7f4cc6bf1.png" width="109" height="31" /></a>  </p>
+<h4 id="216-display-a-page-with-paths">2.1.6 Display a page with paths<a class="headerlink" href="#216-display-a-page-with-paths" title="Permanent link">#</a></h4>
 <p>Browse the map and open the task detail by clicking on a point on the map  </p>
-<p><img src="/media/media_eb7f9ff2260a9fb8.png" width="650" height="332" /></p>
+<p><a class="glightbox" href="/media/media_eb7f9ff2260a9fb8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_eb7f9ff2260a9fb8.png" width="650" height="332" /></a></p>
 <p>Fig. 37 Tasks Status</p>
-<h4 id="task-detail-page">Task Detail page</h4>
+<h4 id="220-task-detail-page">2.2.0 Task Detail page<a class="headerlink" href="#220-task-detail-page" title="Permanent link">#</a></h4>
 <p>This page contains detailed information about the task, as well as photos that were taken for the task. The map shows the position of the
 photos, the <em>viewing radius</em> of the camera and the <em>direction</em> of the photo.</p>
-<p><img src="/media/media_e7ecd8bee5ef8a5d.png" width="650" height="337" /></p>
+<p><a class="glightbox" href="/media/media_e7ecd8bee5ef8a5d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e7ecd8bee5ef8a5d.png" width="650" height="337" /></a></p>
 <p>Fig.38 Task detail</p>
-<h4 id="photos-can-be-rotated">Photos can be rotated</h4>
+<h4 id="221-photos-can-be-rotated">2.2.1 Photos can be rotated<a class="headerlink" href="#221-photos-can-be-rotated" title="Permanent link">#</a></h4>
 <p>here using the buttons:</p>
-<p><img src="/media/media_959a4f84809a7066.png" width="58" height="36" /></p>
-<h4 id="click-on-the-photo-to-open-the-photo-gallery">Click on the photo to open the Photo Gallery</h4>
+<p><a class="glightbox" href="/media/media_959a4f84809a7066.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_959a4f84809a7066.png" width="58" height="36" /></a></p>
+<h4 id="222-click-on-the-photo-to-open-the-photo-gallery">2.2.2 Click on the photo to open the Photo Gallery<a class="headerlink" href="#222-click-on-the-photo-to-open-the-photo-gallery" title="Permanent link">#</a></h4>
 <p>A table with source data is placed next to each photo.</p>
-<h4 id="user-can-select-photos-for-export-to-pdf">User can select photos for export to PDF</h4>
-<p><img src="/media/media_b9a1f67d75901d48.png" width="86" height="27" /></p>
-<p><img src="/media/media_32cb754056fc8117.png" width="387" height="60" /></p>
+<h4 id="223-user-can-select-photos-for-export-to-pdf">2.2.3 User can select photos for export to PDF<a class="headerlink" href="#223-user-can-select-photos-for-export-to-pdf" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_b9a1f67d75901d48.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_b9a1f67d75901d48.png" width="86" height="27" /></a></p>
+<p><a class="glightbox" href="/media/media_32cb754056fc8117.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_32cb754056fc8117.png" width="387" height="60" /></a></p>
 <p>PDF export functionality is described below.</p>
-<h3 id="photos">Photos</h3>
-<h4 id="standalone-photos-gallery">Standalone photos gallery</h4>
+<h3 id="30-photos">3.0 Photos<a class="headerlink" href="#30-photos" title="Permanent link">#</a></h3>
+<h4 id="31-standalone-photos-gallery">3.1 Standalone photos gallery<a class="headerlink" href="#31-standalone-photos-gallery" title="Permanent link">#</a></h4>
 <p>At the top of the page, a map is displayed, where the position of individual unassigned photos is marked.</p>
 <p>Fig. 39 Standalone task unassigned photos</p>
 <p>Below are photos that are not assigned to any task. A table with source data is placed next to each photo.</p>
-<p><img src="/media/media_987f5869113b749c.png" width="650" height="332" /></p>
+<p><a class="glightbox" href="/media/media_987f5869113b749c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_987f5869113b749c.png" width="650" height="332" /></a></p>
 <p>Fig. 40 Unassigned photos</p>
 <p>Several options are available to edit the photos:</p>
-<h4 id="rotation">Rotation <img src="/media/media_3abcbf294c5f55f7.png" width="58" height="37" /></h4>
-<h4 id="delete">Delete <img src="/media/media_7e7520483684c77e.png" width="21" height="29" /></h4>
-<h4 id="select-for-an-action">Select for an action <img src="/media/media_db5565f08fd0257d.png" width="66" height="28" /></h4>
+<h4 id="311-rotation">3.1.1 Rotation <a class="glightbox" href="/media/media_3abcbf294c5f55f7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3abcbf294c5f55f7.png" width="58" height="37" /></a><a class="headerlink" href="#311-rotation" title="Permanent link">#</a></h4>
+<h4 id="312-delete">3.1.2 Delete <a class="glightbox" href="/media/media_7e7520483684c77e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7e7520483684c77e.png" width="21" height="29" /></a><a class="headerlink" href="#312-delete" title="Permanent link">#</a></h4>
+<h4 id="313-select-for-an-action">3.1.3 Select for an action <a class="glightbox" href="/media/media_db5565f08fd0257d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_db5565f08fd0257d.png" width="66" height="28" /></a><a class="headerlink" href="#313-select-for-an-action" title="Permanent link">#</a></h4>
 <ul>
 <li>By clicking the Select button, the photo is marked for the bulk assignment to a task, to a bulk delete or bulk export to PDF</li>
 </ul>
-<p><img src="/media/media_7d3d8d5292e8e65b.png" width="128" height="83" /></p>
+<p><a class="glightbox" href="/media/media_7d3d8d5292e8e65b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7d3d8d5292e8e65b.png" width="128" height="83" /></a></p>
 <ul>
 <li>Selected photos are marked by the red rectangle.
 Open photo gallery – click on the photo (see below)</li>
 </ul>
-<h4 id="when-selecting-bulk-actions-the-following-options-are-available">When selecting bulk <em>actions</em>, the following options are available</h4>
-<p><img src="/media/media_3d5d54be425feab7.png" width="650" height="63" /></p>
-<p><img src="/media/media_84ca2e2f23d979ce.png" width="650" height="60" /></p>
+<h4 id="314-when-selecting-bulk-actions-the-following-options-are-available">3.1.4 When selecting bulk <em>actions</em>, the following options are available<a class="headerlink" href="#314-when-selecting-bulk-actions-the-following-options-are-available" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_3d5d54be425feab7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3d5d54be425feab7.png" width="650" height="63" /></a></p>
+<p><a class="glightbox" href="/media/media_84ca2e2f23d979ce.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_84ca2e2f23d979ce.png" width="650" height="60" /></a></p>
 <p>Select all</p>
 <p>Selects all unassigned photos</p>
 <ul>
@@ -1970,7 +2007,7 @@ Open photo gallery – click on the photo (see below)</li>
 <ul>
 <li>Choose task</li>
 </ul>
-<h4 id="displays-a-page-where-you-can-select-the-task">Displays a page where you can select the task:</h4>
+<h4 id="315-displays-a-page-where-you-can-select-the-task">3.1.5 Displays a page where you can select the task:<a class="headerlink" href="#315-displays-a-page-where-you-can-select-the-task" title="Permanent link">#</a></h4>
 <p>to which the selected photos are to be assigned.
 <br> For recapitulation, the photos that were marked on the previous page are displayed here.
 <br> Below the photos, a selection box is available, where it is necessary to select the target task. The map is displayed at the top of the page.</p>
@@ -1978,20 +2015,20 @@ Open photo gallery – click on the photo (see below)</li>
 <li>After clicking the Confirm button, a dialog box will appear, where by pressing the OK button, the process of assigning photos will be completed.</li>
 <li>Once finished, the user is navigated back to the Task list screen.</li>
 </ol>
-<h4 id="delete-selected-photos">Delete selected photos</h4>
-<p><img src="/media/media_455d910b74ee28f.png" width="447" height="183" /></p>
+<h4 id="316-delete-selected-photos">3.1.6 Delete selected photos<a class="headerlink" href="#316-delete-selected-photos" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_455d910b74ee28f.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_455d910b74ee28f.png" width="447" height="183" /></a></p>
 <p>Displays a dialog box where, after confirmation by pressing <em>OK</em>, the marked photos will be deleted</p>
-<h4 id="export-all-to-pdf">Export all to PDF</h4>
+<h4 id="317-export-all-to-pdf">3.1.7 Export all to PDF<a class="headerlink" href="#317-export-all-to-pdf" title="Permanent link">#</a></h4>
 <p>This button pass all photos to PDF export</p>
-<h4 id="export-selected-to-pdf">Export selected to PDF</h4>
+<h4 id="318-export-selected-to-pdf">3.1.8 Export selected to PDF<a class="headerlink" href="#318-export-selected-to-pdf" title="Permanent link">#</a></h4>
 <p>This button pass selected photos to PDF export</p>
 <p>PDF export functionality is described below.</p>
-<h4 id="photo-gallery">Photo gallery</h4>
+<h4 id="photo-gallery">Photo gallery<a class="headerlink" href="#photo-gallery" title="Permanent link">#</a></h4>
 <p>The gallery is accessible from various places in the application, always
 by clicking on the photo.</p>
-<p><img src="/media/media_995e8070844c221a.png" width="576" height="654" /></p>
+<p><a class="glightbox" href="/media/media_995e8070844c221a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_995e8070844c221a.png" width="576" height="654" /></a></p>
 <p>Fig. 41 Photo gallery  </p>
-<h4 id="control-panel">Control panel</h4>
+<h4 id="319-control-panel">3.1.9 Control panel<a class="headerlink" href="#319-control-panel" title="Permanent link">#</a></h4>
 <p>At the bottom is the control panel, where you can rotate the photo and
 jump between photos using the arrows.</p>
 <p>Clicking on a photo in the gallery opens a new window in which the photo
@@ -2002,28 +2039,28 @@ is loaded in its maximum size and it is possible to </p>
 <li>Reset zoom
 or set the default size  change is for preview only, and will not be saved.</li>
 </ul>
-<p><img src="/media/media_274c8f734212bc4c.png" width="406" height="168" />  </p>
-<h3 id="paths">Paths</h3>
-<h4 id="user-paths">User paths</h4>
+<p><a class="glightbox" href="/media/media_274c8f734212bc4c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_274c8f734212bc4c.png" width="406" height="168" /></a>  </p>
+<h3 id="40-paths">4.0 Paths<a class="headerlink" href="#40-paths" title="Permanent link">#</a></h3>
+<h4 id="41-user-paths">4.1 User paths<a class="headerlink" href="#41-user-paths" title="Permanent link">#</a></h4>
 <p>At the top of the page, a map is displayed, where all of the paths are
 shown.</p>
-<p><img src="/media/media_80f9c808fabbd3c9.png" width="650" height="297" /></p>
+<p><a class="glightbox" href="/media/media_80f9c808fabbd3c9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_80f9c808fabbd3c9.png" width="650" height="297" /></a></p>
 <p>Fig. 42 User paths</p>
 <p>Paths can be highlighted by clicking on the map. Each path has displayed
 points of which it is composed. Click on the point to display a table
 with detailed information.</p>
-<p><img src="/media/media_c4d2f51d24fb4b97.png" width="650" height="296" /></p>
+<p><a class="glightbox" href="/media/media_c4d2f51d24fb4b97.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_c4d2f51d24fb4b97.png" width="650" height="296" /></a></p>
 <p>Fig. 43 Highlighted path with point detail</p>
 <p>Below is a list of paths of the selected user. Only selected routes can
 be displayed on the map using the checkbox in the Show on map column.</p>
 <p>Paths can be deleted using delete path.</p>
-<p><img src="/media/media_8c94a2a379769430.png" width="105" height="28" />  </p>
-<h4 id="generating-pdf-documents">Generating PDF documents</h4>
+<p><a class="glightbox" href="/media/media_8c94a2a379769430.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8c94a2a379769430.png" width="105" height="28" /></a>  </p>
+<h4 id="411-generating-pdf-documents">4.1.1 Generating PDF documents<a class="headerlink" href="#411-generating-pdf-documents" title="Permanent link">#</a></h4>
 <p>The functionality of exporting data to PDF is triggered by buttons:</p>
-<p><img src="/media/media_32cb754056fc8117.png" width="367" height="57" /></p>
+<p><a class="glightbox" href="/media/media_32cb754056fc8117.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_32cb754056fc8117.png" width="367" height="57" /></a></p>
 <p>The buttons are available at the <em>Unassigned photos page</em> and the <em>Task detail page</em>.</p>
 <p>The button (Export all to PDF) passes all photos at current page to a PDF export and open a PDF prepare page.</p>
-<p><img src="/media/media_a6a98ef36d008b95.png" width="650" height="321" /></p>
+<p><a class="glightbox" href="/media/media_a6a98ef36d008b95.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_a6a98ef36d008b95.png" width="650" height="321" /></a></p>
 <p>Fig. 44 PDF generating prepare page</p>
 <p>On the PDF prepare page are displayed all the photos which are going to
 be exported. Every photo has its own map generated especially for the
@@ -2032,73 +2069,46 @@ PDF which can be adjusted before export. Once everything is prepared
 “Generate” button.</p>
 <p>Generating PDF can take some time, which depends on total count of
 exported photos. The user is informed by progress loader.</p>
-<p><img src="/media/media_e6361a298a91396d.png" width="189" height="334" />  </p>
+<p><a class="glightbox" href="/media/media_e6361a298a91396d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e6361a298a91396d.png" width="189" height="334" /></a>  </p>
 <p>Fig. 45 Progress loader</p>
 <p>The button “Export selected to PDF” passes to the PDF export just the
 selected photos:</p>
-<p>Next steps of the exporting process are identical to process steps described above (“Export all to PDF”).</p>
-<p><img src="/media/media_cf6f5e8bb44156fe.png" width="650" height="421" /></p>
+<p><a class="glightbox" href="/media/media_cf6f5e8bb44156fe.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_cf6f5e8bb44156fe.png" width="650" height="421" /></a></p>
 <p>Fig. 46 Selected photo</p>
-<h3 id="map-view">Map view</h3>
-<p>Points that represent photos or tasks displayed on the currently open page are always displayed on the map.</p>
-<p><img src="/media/media_68441ea2e0022d85.png" width="650" height="233" /></p>
+<p><br>Next steps of the exporting process are
+identical to process steps described above (“Export all to PDF”).<br></p>
+<h3 id="50-map">5.0 Map<a class="headerlink" href="#50-map" title="Permanent link">#</a></h3>
+<p><a class="glightbox" href="/media/media_68441ea2e0022d85.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_68441ea2e0022d85.png" width="650" height="233" /></a></p>
 <p>Fig. 47 Map</p>
-<h4 id="zoom">Zoom</h4>
-<ul>
-<li>zoom of the map is automatically set so that all points are visible
-in the displayed area of the map</li>
-<li>zoom can be adjusted manually (with the mouse wheel or using the control panel on the map).</br></li>
-</ul>
-<h4 id="coded-markers">Coded markers</h4>
-<ul>
-<li>points are color <b><em>coded</em></b> according to the active status of the task. </li>
-<li>Color of the points corresponds to the color of the status in the task list.</li>
-</ul>
-<p>Points representing unassigned photos are not <b><em>color coded</em></b>.</p>
-<p><img src="/media/media_7fe4e6af989321c9.png" width="605" height="39" /></p>
+<p>Points that represent photos or tasks displayed on the currently open
+page are always displayed on the map.</p>
+<p>The zoom of the map is automatically set so that all points are visible
+in the displayed area of the map. The zoom can be adjusted manually
+(with the mouse wheel or using the control panel on the map).</p>
+<p>The points are color <em>coded according to the active status of the task.
+The color of the points corresponds to the color of the status in the
+task list. Points representing unassigned photos are not color</em> coded.</p>
+<p><a class="glightbox" href="/media/media_7fe4e6af989321c9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7fe4e6af989321c9.png" width="605" height="39" /></a></p>
 <p>Fig. 44 Task status list</p>
-<h4 id="middle-zoom">Middle zoom</h4>
-<ul>
-<li>Click on a map point to open the task detail.</li>
-</ul>
-<p><img src="/media/media_a5a53542367a0beb.png" width="518" height="338" /></p>
+<p>Click on a map point to open the task detail.</p>
+<p><a class="glightbox" href="/media/media_a5a53542367a0beb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_a5a53542367a0beb.png" width="518" height="338" /></a></p>
 <p>Fig. 48 Map <em>a middle zoom</em></p>
-<h4 id="detail-zoom-in">Detail zoom in</h4>
-<ul>
-<li>High concentration of points in a small area, the points are grouped into one group with a numerical expression of the
-number of points.</li>
-<li>
-<p>Click on the group icon to zoom in on the group position. As you zoom in greatly on the map </p>
-<ul>
-<li>points are changed to preview banners that display :<ul>
-<li>specific user</li>
-<li>name of the task</li>
-<li>photo and the radius of the camera view at the time the photo was taken.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Clicking on this banner opens the following task detail.</p>
-</li>
-<li>
+<p>Due to the possible high concentration of points in a small area, the
+points are grouped into one group with a numerical expression of the
+number of points in a given place. Click on the group icon to zoom in on
+the group position. As you zoom in greatly on the map, points are
+changed to preview banners that display a specific user, the name of the
+task, the photo and the radius of the camera view at the time the photo
+was taken. Clicking on this banner opens the following task detail.</p>
 <p>Polygons of existing plots and their names are also shown.</p>
-</li>
-</ul>
-<p><img src="/media/media_db4a3402c04fe4cd.png" width="549" height="269" /></p>
+<p><a class="glightbox" href="/media/media_db4a3402c04fe4cd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_db4a3402c04fe4cd.png" width="549" height="269" /></a></p>
 <p>Fig. 49 Map – detail zoom in</p>
-<h3 id="administrator">Administrator</h3>
-<p>After logging in, the user management page is displayed.</p>
-<ul>
-<li>
-<p>Graphically and functionally, the application is the same as in the approach for users.</p>
-</li>
-<li>
-<p>Administrator access, controls are added as described below.</p>
-</li>
-</ul>
-<h4 id="user-management">User management</h4>
-<p><img src="/media/media_d5a09cf063d1bb1b.png" width="650" height="188" /></p>
+<h3 id="60-administrator">6.0 Administrator<a class="headerlink" href="#60-administrator" title="Permanent link">#</a></h3>
+<p>After logging in, the user management page is displayed. Graphically and
+functionally, the application is the same as in the approach for users.
+In the administrator access, controls are added as described below.</p>
+<h4 id="user-management">User management<a class="headerlink" href="#user-management" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_d5a09cf063d1bb1b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d5a09cf063d1bb1b.png" width="650" height="188" /></a></p>
 <p>Fig. 50 User management</p>
 <p>At the top is a map with all the tasks of all users. At the bottom is a
 list of users.</p>
@@ -2106,16 +2116,16 @@ list of users.</p>
 <ul>
 <li>Search for a user according to the entered text</li>
 </ul>
-<p><img src="/media/media_f2c99e115a7738be.png" width="194" height="49" /></p>
+<p><a class="glightbox" href="/media/media_f2c99e115a7738be.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2c99e115a7738be.png" width="194" height="49" /></a></p>
 <ul>
 <li>Sort users in the list by the selected column (by clicking on the column heading)</li>
 </ul>
-<p><img src="/media/media_80ec801054b680cd.png" width="650" height="115" /></p>
+<p><a class="glightbox" href="/media/media_80ec801054b680cd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_80ec801054b680cd.png" width="650" height="115" /></a></p>
 <ul>
 <li>Open user detail</li>
 </ul>
-<p><img src="/media/media_cb2a981135723b9c.png" width="328" height="347" /></p>
-<p><img src="/media/media_54aef75f9d5d1ab1.png" width="156" height="43" />  </p>
+<p><a class="glightbox" href="/media/media_cb2a981135723b9c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_cb2a981135723b9c.png" width="328" height="347" /></a></p>
+<p><a class="glightbox" href="/media/media_54aef75f9d5d1ab1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_54aef75f9d5d1ab1.png" width="156" height="43" /></a>  </p>
 <ul>
 <li>
 <p>Add a new user</p>
@@ -2130,35 +2140,34 @@ list of users.</p>
 <p>The entered login and password will be used by the user to access the application.</p>
 </li>
 </ul>
-<p><img src="/media/media_44bd570b5aeae909.png" width="356" height="375" /></p>
+<p><a class="glightbox" href="/media/media_44bd570b5aeae909.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_44bd570b5aeae909.png" width="356" height="375" /></a></p>
 <ul>
 <li>Edit an existing user</li>
 </ul>
-<p><img src="/media/media_efd2f8632ce2fcec.png" width="157" height="54" /></p>
+<p><a class="glightbox" href="/media/media_efd2f8632ce2fcec.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_efd2f8632ce2fcec.png" width="157" height="54" /></a></p>
 <ul>
 <li>Clicking the button displays the same table as when creating a new user</li>
 </ul>
 <p>In this case, the table is pre * populated with the data of the selected user</p>
 <p>The data can be edited in the table (except for the login) and their modification can be confirmed with the <em>Save</em> button.</p>
 <p>If the password field is left blank,the password remains the same.</p>
-<h4 id="user-detail">User Detail</h4>
-<p><img src="/media/media_8372ad0c74abb659.png" width="650" height="323" /></p>
+<h4 id="user-detail">User Detail<a class="headerlink" href="#user-detail" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_8372ad0c74abb659.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8372ad0c74abb659.png" width="650" height="323" /></a></p>
 <p>Fig. 51 Tasks  <em>Administrator</em></p>
 <p>This page is the same as in the user's approach, extended by the
 following:</p>
-<h4 id="create-a-new-task">Create a new task</h4>
-<p><img src="/media/media_6cc4e0f35e8a8b0.png" width="142" height="45" /></p>
 <ul>
-<li>
-<p>Clicking on the button displays a
-table in which it is necessary to fill in the data of the new task.
-<br>The creation of a new task is confirmed by pressing the Save button.</p>
-</li>
-<li>
-<p>A new task is created with the status"<em>new</em>"</p>
-</li>
+<li>New task</li>
 </ul>
-<p><img src="/media/media_79ee220492ba9733.png" width="320" height="214" /></p>
+<p><a class="glightbox" href="/media/media_6cc4e0f35e8a8b0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6cc4e0f35e8a8b0.png" width="142" height="45" /></a></p>
+<ul>
+<li>Clicking on the button displays a
+table in which it is necessary to fill in the data of the new task.
+The creation of a new task is confirmed by pressing the Save button.
+A new task is created with the status
+"<em>new</em>"</li>
+</ul>
+<p><a class="glightbox" href="/media/media_79ee220492ba9733.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_79ee220492ba9733.png" width="320" height="214" /></a></p>
 <ul>
 <li>
 <p>Bulk task approval function</p>
@@ -2189,15 +2198,15 @@ can be approved.</p>
 <p>Complete control information is displayed in the task detail for each photo.</p>
 </li>
 </ul>
-<h4 id="task-detail">Task Detail</h4>
-<p><img src="/media/media_3ac0757ce4cb0269.png" width="650" height="340" /></p>
+<h4 id="task-detail">Task Detail<a class="headerlink" href="#task-detail" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_3ac0757ce4cb0269.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3ac0757ce4cb0269.png" width="650" height="340" /></a></p>
 <p>Fig. 51 Task detail – Administrator view</p>
 <p>This page is the same as in the user's approach, extended by the
 following:</p>
-<h4 id="task-detail-actions">Task Detail Actions</h4>
+<h4 id="task-detail-actions">Task Detail Actions<a class="headerlink" href="#task-detail-actions" title="Permanent link">#</a></h4>
 <ul>
 <li>
-<p>Approve <img src="/media/media_d82c577df9fe8c14.png" width="43" height="40" /></p>
+<p>Approve <a class="glightbox" href="/media/media_d82c577df9fe8c14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d82c577df9fe8c14.png" width="43" height="40" /></a></p>
 </li>
 <li>
 <p>"data checked"<em>and the reception status</em></p>
@@ -2206,7 +2215,7 @@ following:</p>
 <p><em>"Approved".</em></p>
 </li>
 <li>
-<p>Reject <img src="/media/media_3d98108fa20a4b0a.png" width="39" height="40" /></p>
+<p>Reject <a class="glightbox" href="/media/media_3d98108fa20a4b0a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3d98108fa20a4b0a.png" width="39" height="40" /></a></p>
 <ul>
 <li>
 <p>This action is available with the status</p>
@@ -2223,7 +2232,7 @@ following:</p>
 </ul>
 </li>
 <li>
-<p>Return to user <img src="/media/media_77ccf5387648e807.png" width="44" height="40" /></p>
+<p>Return to user <a class="glightbox" href="/media/media_77ccf5387648e807.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_77ccf5387648e807.png" width="44" height="40" /></a></p>
 </li>
 <li>
 <p>This action is available with the status <em>"data provided"</em>. It allows you to return the task to the user for completion.</p>
@@ -2237,7 +2246,7 @@ following:</p>
 </li>
 <li>
 <p>Move to <em>"data provided"</em>
-<img src="/media/media_788e386195526b6c.png" width="53" height="34" />  </p>
+<a class="glightbox" href="/media/media_788e386195526b6c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_788e386195526b6c.png" width="53" height="34" /></a>  </p>
 </li>
 <li>
 <p>This event is available with an <em>"open"</em>status. It allows you to move the task to <em>"data provided"</em> status.</p>
@@ -2249,7 +2258,7 @@ following:</p>
 <li>
 <p>The result of the action is the
     setting of the status <em>"data provided".</em>
-    <img src="/media/media_d7581e8254b0118.png" width="51" height="34" />  </p>
+    <a class="glightbox" href="/media/media_d7581e8254b0118.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d7581e8254b0118.png" width="51" height="34" /></a>  </p>
 </li>
 <li>
 <p>Delete</p>
@@ -2279,28 +2288,28 @@ following:</p>
 <p>The table of photo data shows the results of the performed checks in color.</p>
 </li>
 </ul>
-<h3 id="super-administrator">Super-administrator</h3>
+<h4 id="super-administrator">Super-administrator<a class="headerlink" href="#super-administrator" title="Permanent link">#</a></h4>
 <p>After logging in, the Agency management page is displayed.</p>
-<p><img src="/media/media_6a575c733558634e.png" width="650" height="283" /></p>
+<p><a class="glightbox" href="/media/media_6a575c733558634e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6a575c733558634e.png" width="650" height="283" /></a></p>
 <p>Fig. 53 Agency management  </p>
-<h4 id="agency-list">Agency list</h4>
+<h4 id="agency-list">Agency list<a class="headerlink" href="#agency-list" title="Permanent link">#</a></h4>
 <p>This page offers the following features:</p>
 <ul>
 <li>Add new agency</li>
 </ul>
-<p><img src="/media/media_e5bf8f8484573e68.png" width="160" height="46" /></p>
+<p><a class="glightbox" href="/media/media_e5bf8f8484573e68.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e5bf8f8484573e68.png" width="160" height="46" /></a></p>
 <ul>
 <li>Clicking on the button displays a table in which it is necessary to fill in the name of the new agency.
 The creation of the agency is confirmed by pressing the <em>Save</em> button.</li>
 </ul>
-<p><img src="/media/media_7753f656b8953d20.png" width="165" height="168" /></p>
+<p><a class="glightbox" href="/media/media_7753f656b8953d20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7753f656b8953d20.png" width="165" height="168" /></a></p>
 <p>Open detail of the agency by clicking on a row of specified agency.</p>
-<p><img src="/media/media_1dbbf1a1eca58337.png" width="183" height="32" />  </p>
-<h4 id="agency-detail">Agency detail</h4>
-<p><img src="/media/media_3bb56e251bcea433.png" width="650" height="140" /></p>
+<p><a class="glightbox" href="/media/media_1dbbf1a1eca58337.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_1dbbf1a1eca58337.png" width="183" height="32" /></a>  </p>
+<h4 id="agency-detail">Agency detail<a class="headerlink" href="#agency-detail" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_3bb56e251bcea433.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3bb56e251bcea433.png" width="650" height="140" /></a></p>
 <p>Fig. 54 Officers management</p>
-<h4 id="add-a-new-officer">Add a new officer</h4>
-<p><img src="/media/media_8a6179a89e95448e.png" width="166" height="54" />  </p>
+<h4 id="add-a-new-officer">Add a new officer<a class="headerlink" href="#add-a-new-officer" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_8a6179a89e95448e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8a6179a89e95448e.png" width="166" height="54" /></a>  </p>
 <ul>
 <li>
 <p>By clicking on the button, a table is displayed in which it is necessary to fill in the data of the new officer.
@@ -2310,9 +2319,9 @@ The creation of a new officer is confirmed by pressing the <em>Save</em> button.
 <p>The entered login and password will be used by the user to access the application.</p>
 </li>
 </ul>
-<p><img src="/media/media_e19b0fd224032e86.png" width="241" height="248" /></p>
-<h4 id="edit-an-existing-officer">Edit an existing officer</h4>
-<p><img src="/media/media_b7bd5ab846f61c65.png" width="91" height="40" /></p>
+<p><a class="glightbox" href="/media/media_e19b0fd224032e86.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e19b0fd224032e86.png" width="241" height="248" /></a></p>
+<h4 id="edit-an-existing-officer">Edit an existing officer<a class="headerlink" href="#edit-an-existing-officer" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_b7bd5ab846f61c65.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_b7bd5ab846f61c65.png" width="91" height="40" /></a></p>
 <ul>
 <li>
 <p>Clicking the button displays the same table as when creating a new officer. In this case, the table
@@ -2322,8 +2331,8 @@ is pre * populated with the data of the selected officer. The data can be edited
 <p>If the password field is left blank,the password remains the same.</p>
 </li>
 </ul>
-<h4 id="deactivate-an-existing-officer">Deactivate an existing officer</h4>
-<p><img src="/media/media_67cbd8759aa2d1c8.png" width="114" height="34" />  </p>
+<h4 id="deactivate-an-existing-officer">Deactivate an existing officer<a class="headerlink" href="#deactivate-an-existing-officer" title="Permanent link">#</a></h4>
+<p><a class="glightbox" href="/media/media_67cbd8759aa2d1c8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_67cbd8759aa2d1c8.png" width="114" height="34" /></a>  </p>
 <ul>
 <li>
 <p>After pressing the Deactivate button, a dialog box is displayed, where after pressing OK the action is performed.</p>
@@ -2335,72 +2344,47 @@ is pre * populated with the data of the selected officer. The data can be edited
 <p>The deactivated officer will be no more able to log in into application.</p>
 </li>
 </ul>
-<h4 id="create-new-purpose">Create new purpose</h4>
-<p><img src="/media/media_purpose-add-new.png" width="142" height="45" /></p>
-<ul>
-<li>Clicking on the button displays a
-table in which it is necessary to fill in the data of the new purpose.
-<br>The creation of a new purpose is confirmed by pressing the Save button.</li>
-</ul>
-<p><img src="/media/media_purpose-add-new-table.png" width="320" height="214" /></p>
-<h4 id="edit-an-existing-purpose">Edit an existing purpose</h4>
-<ul>
-<li>Clicking on the button displays a
-table in which it is necessary to fill in the data of the edit purpose.
-<br>Edit purpose property is confirmed by pressing the Save button.</li>
-</ul>
-<p><img src="/media/media_purpose-edit-table.png" width="320" height="214" /></p>
-<h4 id="deactivate-an-existing-purpose">Deactivate an existing purpose</h4>
-<p><img src="/media/media_67cbd8759aa2d1c8.png" width="114" height="34" />  </p>
-<ul>
-<li>
-<p>After pressing the Deactivate button, a dialog box is displayed, where after pressing OK the action is performed.</p>
-</li>
-<li>
-<p>The result of the action is deactivation of the selected purpose.</p>
-</li>
-</ul>
-<h3 id="appendix-a-hosting-and-installing-the-web-console">Appendix A: Hosting and installing the web console</h3>
-<h4 id="hosting-requirements">Hosting requirements</h4>
+<h3 id="appendix-a-hosting-and-installing-the-web-console">Appendix A: Hosting and installing the web console<a class="headerlink" href="#appendix-a-hosting-and-installing-the-web-console" title="Permanent link">#</a></h3>
+<h4 id="hosting-requirements">Hosting requirements<a class="headerlink" href="#hosting-requirements" title="Permanent link">#</a></h4>
 <ul>
 <li>Php7 engine</li>
 <li>MySQL 8 database server</li>
 <li>Apache2 webserver</li>
 </ul>
-<h4 id="server-resources-requirements">Server resources requirements</h4>
+<h4 id="server-resources-requirements">Server resources requirements<a class="headerlink" href="#server-resources-requirements" title="Permanent link">#</a></h4>
 <ul>
 <li>min 8GB RAM</li>
 <li>min 2 core cpu</li>
 <li>min 10GB disk space</li>
 </ul>
-<h4 id="installation-steps-for-the-webconsole">Installation steps for the webconsole</h4>
+<h4 id="installation-steps-for-the-webconsole">Installation steps for the webconsole<a class="headerlink" href="#installation-steps-for-the-webconsole" title="Permanent link">#</a></h4>
 <p>copy the web console files into the selected webroot directory create VirtualHost section in the Apache2 configuration and point it to selected directory
 make sure that there is set a directive DirectoryIndex index.php</p>
 <p>write the database name, database user and the corresponding password into the web console configuration file _includes.php</p>
-<pre><code>switch (SERVER) {
-  case 'UAT':
-    define('SYSTEM_HOST', '&lt;https://mybohostname&gt;');
-    define('DB_TYPE', 'mysqli');
-    define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', 'xxxx');
-    define('DB_SCHEMA', 'egnss4all');
+<div class="highlight"><pre><span></span><code>switch (SERVER) {
+  case &#39;UAT&#39;:
+    define(&#39;SYSTEM_HOST&#39;, &#39;&lt;https://mybohostname&gt;&#39;);
+    define(&#39;DB_TYPE&#39;, &#39;mysqli&#39;);
+    define(&#39;DB_HOST&#39;, &#39;localhost&#39;);
+    define(&#39;DB_USER&#39;, &#39;root&#39;);
+    define(&#39;DB_PASSWORD&#39;, &#39;xxxx&#39;);
+    define(&#39;DB_SCHEMA&#39;, &#39;egnss4all&#39;);
     break;
-</code></pre>
-<pre><code> case 'LOCALHOST':
-    define('SYSTEM_HOST', '&lt;https://mybohostname&gt;');
-    define('DB_TYPE', 'mysqli');
-    define('DB_HOST', 'localhost');
-    define('DB_USER', 'xxxx');
-    define('DB_PASSWORD', 'xxxx');
-    define('DB_SCHEMA', 'egnss4all');
-    ini_set('display_errors', 0);
+</code></pre></div>
+<div class="highlight"><pre><span></span><code> case &#39;LOCALHOST&#39;:
+    define(&#39;SYSTEM_HOST&#39;, &#39;&lt;https://mybohostname&gt;&#39;);
+    define(&#39;DB_TYPE&#39;, &#39;mysqli&#39;);
+    define(&#39;DB_HOST&#39;, &#39;localhost&#39;);
+    define(&#39;DB_USER&#39;, &#39;xxxx&#39;);
+    define(&#39;DB_PASSWORD&#39;, &#39;xxxx&#39;);
+    define(&#39;DB_SCHEMA&#39;, &#39;egnss4all&#39;);
+    ini_set(&#39;display_errors&#39;, 0);
     break;
 }
-</code></pre>
+</code></pre></div>
 <p>run <a href="&lt;http://your&gt; * domain.tld/"><u>http://your * domain.tld</u></a></p>
-<h3 id="appendix-b-developer-documentation">Appendix B: Developer Documentation</h3>
-<h4 id="technologies">Technologies</h4>
+<h3 id="appendix-b-developer-documentation">Appendix B: Developer Documentation<a class="headerlink" href="#appendix-b-developer-documentation" title="Permanent link">#</a></h3>
+<h4 id="technologies">Technologies<a class="headerlink" href="#technologies" title="Permanent link">#</a></h4>
 <ul>
 <li>OOP PHP (Object * Oriented Programming)</li>
 <li>TWIG templates</li>
@@ -2412,7 +2396,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 <li>MPDF framework for generating PDF</li>
 <li>html2canvas.js plugin</li>
 </ul>
-<h4 id="classes-description">Classes description</h4>
+<h4 id="classes-description">Classes description<a class="headerlink" href="#classes-description" title="Permanent link">#</a></h4>
 <ul>
 <li>Index</li>
 <li>managing farmers</li>
@@ -2435,7 +2419,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 <li>loading the unassigned photos and tasks of users</li>
 <li>managing photo rotation</li>
 </ul>
-<h4 id="structure">Structure</h4>
+<h4 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">#</a></h4>
 <ul>
 <li>CSS</li>
 <li>cascade styles for web pages</li>
@@ -2454,9 +2438,9 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 <li>VENDOR</li>
 <li>frameworks</li>
 </ul>
-<h3 id="web-services-and-database">Web Services and Database</h3>
+<h3 id="web-services-and-database">Web Services and Database<a class="headerlink" href="#web-services-and-database" title="Permanent link">#</a></h3>
 <p>Below is a technical overview of the implemented web services for the PIC2BIM application and their features.</p>
-<h5 id="installation-web-services">Installation Web Services</h5>
+<h5 id="installation-web-services">Installation Web Services<a class="headerlink" href="#installation-web-services" title="Permanent link">#</a></h5>
 <p><a href="https://github.com/buildvoc/EGNSS4ALLSERVICES"><u>https://github.com/buildvoc/EGNSS4ALLSERVICES</u></a></p>
 <ul>
 <li>Install PHP version 8, enable GDI module in PHP</li>
@@ -2466,13 +2450,13 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 <li>Modify the file engine/db_fx.php accordingly to your MySql database setup</li>
 <li>Create a writable by apache directory named "photos4all" on the same level of the project main path</li>
 </ul>
-<h4 id="installation-database">Installation Database</h4>
+<h4 id="installation-database">Installation Database<a class="headerlink" href="#installation-database" title="Permanent link">#</a></h4>
 <ul>
 <li>Install MySql database 8</li>
 <li>Create a Database named "egnss4all"</li>
 <li>Import sql file into mysql to init database</li>
 </ul>
-<h4 id="check-user-by-login-and-pswd">check user by login and pswd</h4>
+<h4 id="check-user-by-login-and-pswd">check user by login and pswd<a class="headerlink" href="#check-user-by-login-and-pswd" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_login.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_login.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2490,7 +2474,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="sends-geometry-shapes-for-rectangle">sends geometry shapes for rectangle</h4>
+<h4 id="sends-geometry-shapes-for-rectangle">sends geometry shapes for rectangle<a class="headerlink" href="#sends-geometry-shapes-for-rectangle" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_shapes.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_shapes.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2512,7 +2496,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="sends-photos-for-task-or-user">sends photos for task or user</h4>
+<h4 id="sends-photos-for-task-or-user">sends photos for task or user<a class="headerlink" href="#sends-photos-for-task-or-user" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_task_photos.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_task_photos.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2537,7 +2521,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="sends-tasks-for-user">sends tasks for user</h4>
+<h4 id="sends-tasks-for-user">sends tasks for user<a class="headerlink" href="#sends-tasks-for-user" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_tasks.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_tasks.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2566,7 +2550,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="receive-task-data-from-phone">receive task data from phone</h4>
+<h4 id="receive-task-data-from-phone">receive task data from phone<a class="headerlink" href="#receive-task-data-from-phone" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_update.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_update.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2635,7 +2619,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="sends-paths-for-user">sends paths for user</h4>
+<h4 id="sends-paths-for-user">sends paths for user<a class="headerlink" href="#sends-paths-for-user" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_get_paths.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_get_paths.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2668,7 +2652,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="sends-photo-by-id">sends photo by ID</h4>
+<h4 id="sends-photo-by-id">sends photo by ID<a class="headerlink" href="#sends-photo-by-id" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_get_photo.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_get_photo.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2692,7 +2676,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="receive-path-from-phone">receive path from phone</h4>
+<h4 id="receive-path-from-phone">receive path from phone<a class="headerlink" href="#receive-path-from-phone" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_path.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_path.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2723,7 +2707,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="receive-photo-data-from-phone">receive photo data from phone</h4>
+<h4 id="receive-photo-data-from-phone">receive photo data from phone<a class="headerlink" href="#receive-photo-data-from-phone" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_photo.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_photo.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2793,7 +2777,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="receive-task-data-from-phone_1">receive task data from phone</h4>
+<h4 id="receive-task-data-from-phone_1">receive task data from phone<a class="headerlink" href="#receive-task-data-from-phone_1" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_status.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_status.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2811,7 +2795,7 @@ make sure that there is set a directive DirectoryIndex index.php</p>
 </ul>
 </li>
 </ul>
-<h4 id="sends-ids-of-unassigned-photos-for-user">sends IDs of unassigned photos for user</h4>
+<h4 id="sends-ids-of-unassigned-photos-for-user">sends IDs of unassigned photos for user<a class="headerlink" href="#sends-ids-of-unassigned-photos-for-user" title="Permanent link">#</a></h4>
 <p><a href="https://pic2bim.co.uk/egnss4allservices/comm_unassigned.php"><u>https://pic2bim.co.uk/egnss4allservices/comm_unassigned.php</u></a></p>
 <ul>
 <li>input</li>
@@ -2848,8 +2832,16 @@ make sure that there is set a directive DirectoryIndex index.php</p>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -2877,11 +2869,21 @@ make sure that there is set a directive DirectoryIndex index.php</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.indexes"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
+        <script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+      
+        <script src="../assets/javascripts/obsidian_tags.js"></script>
+      
+        <script src="../assets/javascripts/interactive_graph.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

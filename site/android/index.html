@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://docs.pic2bim.co.uk/android/">
       
       
-        <link rel="prev" href="../ios/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../web-console/">
+        <link rel="next" href="../building-attributes/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -49,6 +49,10 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../assets/stylesheets/obsidian_tags.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/interactive_graph.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -83,7 +87,16 @@
       
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -153,7 +166,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
       </label>
     
   
@@ -163,7 +176,7 @@
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
       </label>
     
   
@@ -192,11 +205,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -259,27 +279,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction & Quick Start
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ios/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mobile Application - iOS
+    Getting started
   </span>
   
 
@@ -306,7 +306,7 @@
           
   
   <span class="md-ellipsis">
-    Mobile Application - Android
+    Mobile Application - iOS
   </span>
   
 
@@ -317,7 +317,7 @@
         
   
   <span class="md-ellipsis">
-    Mobile Application - Android
+    Mobile Application - iOS
   </span>
   
 
@@ -591,15 +591,218 @@
   
   
     <li class="md-nav__item">
-      <a href="../web-console/" class="md-nav__link">
+      <a href="../building-attributes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Web Console
+    Building attributes
   </span>
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobile Application - iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web-console-tasklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Console Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Console Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/Concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/field-inspection-onsite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Onsite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/field-inspection-supervisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Inspection Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -883,11 +1086,11 @@
                   
 
 
-  <h1>Mobile Application - Android</h1>
+  <h1>Mobile Application - iOS</h1>
 
 <p>The application for Android phones is distributed via Google Play Store
 service.</p>
-<h4 id="installing-from-apk">Installing from APK</h4>
+<h4 id="installing-from-apk">Installing from APK<a class="headerlink" href="#installing-from-apk" title="Permanent link">#</a></h4>
 <p>Follow these steps to install the application from an apk file. The
 details of these steps will vary depending on your version of Android
 and the manufacturer of your device.</p>
@@ -912,7 +1115,7 @@ and the manufacturer of your device.</p>
     installation is successful</p>
 </li>
 </ol>
-<h4 id="compiling-from-source-code">Compiling from source code</h4>
+<h4 id="compiling-from-source-code">Compiling from source code<a class="headerlink" href="#compiling-from-source-code" title="Permanent link">#</a></h4>
 <p>The source code and the directory structure are compatible and meet the
 requirements for the Android Studio project in which it was created.</p>
 <p>You must have Android Studio installed on your PC to compile the
@@ -928,7 +1131,7 @@ configuration files.</p>
 <p>More detailed information on how to compile and work with source codes
 in Android Studio can be found here:
 <a href="https://developer.android.com/studio/run"><u>https://developer.android.com/studio/run</u></a>.</p>
-<h4 id="minimum-requirements">Minimum requirements</h4>
+<h4 id="minimum-requirements">Minimum requirements<a class="headerlink" href="#minimum-requirements" title="Permanent link">#</a></h4>
 <p>Android:</p>
 <ul>
 <li>
@@ -951,10 +1154,10 @@ in Android Studio can be found here:
 <p>Apps: Google Play services</p>
 </li>
 </ul>
-<h2 id="application-start-and-permissions">Application Start and Permissions</h2>
+<h2 id="application-start-and-permissions">Application Start and Permissions<a class="headerlink" href="#application-start-and-permissions" title="Permanent link">#</a></h2>
 <p>The application can be run on Android devices by selecting it in the
 list of applications.</p>
-<p><img src="/media/media_2c825aba3472f9ea.png" width="101" height="101" /></p>
+<p><a class="glightbox" href="/media/media_2c825aba3472f9ea.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2c825aba3472f9ea.png" width="101" height="101" /></a></p>
 <p>Application icon</p>
 <p>Upon the first start of the application, user permissions will be
 requested, which are required to correctly run the application.</p>
@@ -996,40 +1199,40 @@ the “<em>Confirm Permissions</em>“ button. If these dialogs have been banned
 the user, there is still the possibility to set permissions in the
 System settings before the application start. This procedure may vary on
 different Android devices and system versions.</p>
-<p><img src="/media/media_62beafbabd0918bf.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_62beafbabd0918bf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_62beafbabd0918bf.png" width="227" height="491" /></a>  </p>
 <p>Fig. 1 Permissions request</p>
-<h3 id="login">Login</h3>
+<h3 id="login">Login<a class="headerlink" href="#login" title="Permanent link">#</a></h3>
 <p>After the first launch of the application and granting all the necessary
 permissions to the application, the user will be presented with a login
 screen (Fig. 2), where the assigned login and password will need to be
 filled out.</p>
 <p>Click the <em>Sign In</em> button to complete the login.</p>
-<p><img src="/media/media_2403d496fba0ec80.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_2403d496fba0ec80.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2403d496fba0ec80.png" width="227" height="491" /></a>  </p>
 <p>Fig. 2 Login screen</p>
 <p>The Select Server button allows you to choose the backoffice server to
 use. It is possible to use the default one or your own.</p>
-<p><img src="/media/media_b89f9162fcc0b4eb.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_b89f9162fcc0b4eb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_b89f9162fcc0b4eb.png" width="227" height="491" /></a>  </p>
 <p>Fig. 3 Select Server</p>
 <p>To successfully log in, all data most be entered correctly and the
 device should be connected to the Internet at the time of login. The
 login details will be remembered for future uses of the app. Re-login
 will be required only after explicit logout of the user. After each
 login, the synchronization process (<em>Main screen</em>) starts automatically.</p>
-<p><img src="/media/media_92e6ad4d5fd83597.png" width="227" height="491" />  </p>
-<p><img src="/media/media_dd70ec739ce80cfb.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_92e6ad4d5fd83597.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_92e6ad4d5fd83597.png" width="227" height="491" /></a>  </p>
+<p><a class="glightbox" href="/media/media_dd70ec739ce80cfb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_dd70ec739ce80cfb.png" width="227" height="491" /></a>  </p>
 <p>Fig. 4 Synchronization</p>
 <p>The synchronization process allows you to align information between
 backoffice server and apps</p>
-<h2 id="main-screen">Main Screen</h2>
+<h2 id="main-screen">Main Screen<a class="headerlink" href="#main-screen" title="Permanent link">#</a></h2>
 <p>In the upper section of the Main screen, the “Logged in user” field can
 be found, which provides information about the currently logged in user.</p>
 <p>The attributes of the host device are displayed in the middle of the
 “Basic Information” section. Traffic lights are displayed next to some
 of the attributes. Their detailed description is given in the sidebar
 and can also be found in the <em>About screen</em>.</p>
-<p><img src="/media/media_4c33aa92d1c1ed92.png" width="219" height="491" /></p>
+<p><a class="glightbox" href="/media/media_4c33aa92d1c1ed92.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_4c33aa92d1c1ed92.png" width="219" height="491" /></a></p>
 <p>Fig. 5 Main screen</p>
-<h3 id="traffic-lights">Traffic Lights</h3>
+<h3 id="traffic-lights">Traffic Lights<a class="headerlink" href="#traffic-lights" title="Permanent link">#</a></h3>
 <p>Device capabilities show the current ability of the device to receive
 location data. Green indicates the active ability of the phone to
 determine its current location. Red means an inability to determine your
@@ -1090,11 +1293,11 @@ screen. The context menu has the following options:</p>
 <ul>
 <li>User log out, reverts to the login screen</li>
 </ul>
-<h3 id="task-list">Task List</h3>
+<h3 id="task-list">Task List<a class="headerlink" href="#task-list" title="Permanent link">#</a></h3>
 <p>In the task overview (Fig. 5), user tasks are listed by name, status,
 number of captured images, creation date and due date. By clicking on a
 specific task, a screen with details and options to edit is displayed.</p>
-<p><img src="/media/media_4130749b0388050b.png" width="219" height="491" /></p>
+<p><a class="glightbox" href="/media/media_4130749b0388050b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_4130749b0388050b.png" width="219" height="491" /></a></p>
 <p>Fig. 6 Task list  </p>
 <p>The go-up filter (by tapping the Filter bar at the top of the screen)
 restricts the task list by task name and status. In the filter, you can
@@ -1159,7 +1362,7 @@ editability:</p>
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_fabdf7131f88012c.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_fabdf7131f88012c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_fabdf7131f88012c.png" width="12" height="12" /></a></p></td>
 <td width="494" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><strong>New</strong><br />
 A new task</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border-top: 1px solid #5f95ff; border-bottom: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>YES</p></td>
@@ -1210,7 +1413,7 @@ A new task</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_7cbdcd8dd21ed8f0.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_7cbdcd8dd21ed8f0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7cbdcd8dd21ed8f0.png" width="12" height="12" /></a></p></td>
 <td width="494" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p><strong>Open</strong></p>
 <p>A new task, which has been already displayed by the user. The user is aware of the task.</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>YES</p></td>
@@ -1261,7 +1464,7 @@ A new task</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_7c739e5eaf392e3e.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_7c739e5eaf392e3e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_7c739e5eaf392e3e.png" width="12" height="12" /></a></p></td>
 <td width="494" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p><strong>Returned</strong><br />
 The has been returned by the officer to the user with an additional information request.</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>YES</p></td>
@@ -1312,7 +1515,7 @@ The has been returned by the officer to the user with an additional information 
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_787b962d87198685.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_787b962d87198685.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_787b962d87198685.png" width="12" height="12" /></a></p></td>
 <td width="494" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p><strong>Data provided</strong></p>
 <p>The task which was completed and sent by the user to the PA</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>NO</p></td>
@@ -1363,7 +1566,7 @@ The has been returned by the officer to the user with an additional information 
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_97191c15dbbb88cd.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_97191c15dbbb88cd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_97191c15dbbb88cd.png" width="12" height="12" /></a></p></td>
 <td width="494" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p><strong>Data confirmed (approved task)</strong></p>
 <p>The completed task has been approved.</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>NO</p></td>
@@ -1414,7 +1617,7 @@ The has been returned by the officer to the user with an additional information 
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_3965efc7a4fbd9c4.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_3965efc7a4fbd9c4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_3965efc7a4fbd9c4.png" width="12" height="12" /></a></p></td>
 <td width="494" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p><strong>Data checked (rejected)</strong></p>
 <p>The completed task has been rejected.</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>NO</p></td>
@@ -1465,7 +1668,7 @@ The has been returned by the officer to the user with an additional information 
 <td></td>
 </tr>
 <tr class="odd">
-<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><img src="/media/media_2cf5665cda815a60.png" width="12" height="12" /></p></td>
+<td width="24" data-valign="top" style="background: transparent; border: 1.00pt solid #d9d9d9; padding: 0.18cm"><p><a class="glightbox" href="/media/media_2cf5665cda815a60.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2cf5665cda815a60.png" width="12" height="12" /></a></p></td>
 <td width="494" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>Closed</p>
 <p>The task has been closed is not active.</p></td>
 <td width="86" data-bgcolor="#ffffff" style="background: #ffffff; border: 1px solid #d9d9d9; padding: 0cm 0.19cm"><p>NO</p></td>
@@ -1475,7 +1678,7 @@ The has been returned by the officer to the user with an additional information 
 
 <p>To ensure that all tasks are current, the user must manually start the
 synchronization process (M).</p>
-<h3 id="task-detail">Task detail</h3>
+<h3 id="task-detail">Task detail<a class="headerlink" href="#task-detail" title="Permanent link">#</a></h3>
 <p>The task detail (Fig. 6) shows the data attributes of the task,
 including all captured images. Depending on the status of the task, the
 task can either be edited or viewed.</p>
@@ -1498,10 +1701,10 @@ task can either be edited or viewed.</p>
 <li>
 <p>The photo section shows thumbnails of photos taken. The user takes
     photos by clicking the
-    <img src="/media/media_2c1000e8e08322b9.png" width="30" height="30" />
+    <a class="glightbox" href="/media/media_2c1000e8e08322b9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2c1000e8e08322b9.png" width="30" height="30" /></a>
     , which enters the camera mode for shooting (Camera Mode). Tap to
     delete the currently displayed photo
-    <img src="/media/media_2608af981d409efc.png" width="30" height="30" />
+    <a class="glightbox" href="/media/media_2608af981d409efc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2608af981d409efc.png" width="30" height="30" /></a>
     .</p>
 </li>
 <li>
@@ -1521,27 +1724,27 @@ enough at the time of sending, the task will be locked. In the locked
 state, the task is non-editable and the user can only retry its
 successful submission, or remove this locked state by starting the
 synchronization process.  </p>
-<p><img src="/media/media_d478af89b03a79b3.jpg" width="227" height="491" />
-<img src="/media/media_b8968da77e8e40a6.jpg" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_d478af89b03a79b3.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d478af89b03a79b3.jpg" width="227" height="491" /></a>
+<a class="glightbox" href="/media/media_b8968da77e8e40a6.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_b8968da77e8e40a6.jpg" width="227" height="491" /></a>  </p>
 <p>Fig. 7 Task edit</p>
 <p>Clicking on the photo preview will open a window with its detail (Fig.
 7). The basic attributes of the photo are displayed in the upper left
 corner. In this view, you can switch views between all photos of the
 task using the buttons
-<img src="/media/media_f2dbf52b9b0ac136.gif" width="18" height="18" alt="image60.png" />
+<a class="glightbox" href="/media/media_f2dbf52b9b0ac136.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2dbf52b9b0ac136.gif" width="18" height="18" alt="image60.png" /></a>
 and
-<img src="/media/media_5dc09b3d411a9b7a.gif" width="18" height="18" alt="image54.png" />
+<a class="glightbox" href="/media/media_5dc09b3d411a9b7a.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_5dc09b3d411a9b7a.gif" width="18" height="18" alt="image54.png" /></a>
 , or by swiping your finger on the photo to the right or left. The
 screen <em>Detail</em> supports displaying in portrait or in landscape mode. If
 possible, the photo can also be deleted from this view with the
-<img src="/media/media_2608af981d409efc.png" width="30" height="30" /></p>
-<p><img src="/media/media_55c5ec4f772982b6.jpg" width="227" height="491" />  </p>
+<a class="glightbox" href="/media/media_2608af981d409efc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2608af981d409efc.png" width="30" height="30" /></a></p>
+<p><a class="glightbox" href="/media/media_55c5ec4f772982b6.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_55c5ec4f772982b6.jpg" width="227" height="491" /></a>  </p>
 <p>Fig. 8 Photo detail</p>
-<h3 id="standalone-snapshots">Standalone Snapshots</h3>
+<h3 id="standalone-snapshots">Standalone Snapshots<a class="headerlink" href="#standalone-snapshots" title="Permanent link">#</a></h3>
 <p>Screen showing photos in the list (Fig. 8) taken separately outside the
 task. In each list item, on the left is a preview of the photo and on
 the right a list of basic metadata.</p>
-<p><img src="/media/media_87bf4c009de1423e.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_87bf4c009de1423e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_87bf4c009de1423e.png" width="227" height="491" /></a>  </p>
 <p>Fig. 9 Overview of standalone photos</p>
 <p>From this screen, new photos are taken by touching of a button <em>TAKE
 PHOTO</em>, which enters the user to take camera mode (Camera Mode). Click
@@ -1549,15 +1752,15 @@ the <em>SEND</em> button to send all newly taken unsent photos in the list. The
 <em>MAP</em> button shows all these photos in the map view.</p>
 <p>Clicking on a photo item in the list opens its detail (Fig. 9), where
 the editing is performed using the buttons at the bottom of the screen.</p>
-<p><img src="/media/media_db3205c6677c78a6.jpg" width="227" height="491" /></p>
+<p><a class="glightbox" href="/media/media_db3205c6677c78a6.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_db3205c6677c78a6.jpg" width="227" height="491" /></a></p>
 <p>Fig. 10 Detail of a standalone photo</p>
 <ul>
 <li>
-<p><img src="/media/media_9d7fc06676879590.png" width="18" height="18" />
+<p><a class="glightbox" href="/media/media_9d7fc06676879590.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_9d7fc06676879590.png" width="18" height="18" /></a>
     opens a dialog for editing a note on a specific photo.</p>
 </li>
 <li>
-<p><img src="/media/media_8c3520e917ea656e.png" width="18" height="18" />
+<p><a class="glightbox" href="/media/media_8c3520e917ea656e.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8c3520e917ea656e.png" width="18" height="18" /></a>
     deletes the displayed photo.</p>
 </li>
 <li>
@@ -1567,10 +1770,10 @@ the editing is performed using the buttons at the bottom of the screen.</p>
 <p>After sending, the photo becomes non-editable. If an error occurs during
 uploading, the photo will be set to locked mode. The same rules apply to
 this mode as for submitting a task.</p>
-<h3 id="camera-mode">Camera Mode</h3>
+<h3 id="camera-mode">Camera Mode<a class="headerlink" href="#camera-mode" title="Permanent link">#</a></h3>
 <p>A camera screen interface is used to take a single photo or a photo for
 a task (Fig. 10).</p>
-<p><img src="/media/media_ae3060e9c5310482.jpg" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_ae3060e9c5310482.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_ae3060e9c5310482.jpg" width="227" height="491" /></a>  </p>
 <p>Fig. 11 Camera mode screen</p>
 <p>The basic location data is displayed in the upper left corner:</p>
 <ul>
@@ -1615,7 +1818,7 @@ center of gravity is also displayed:</p>
 </li>
 </ul>
 <p>If manual brightness correction is enabled in the settings, this
-<img src="/media/media_38cfe443541573a1.png" width="30" height="30" />
+<a class="glightbox" href="/media/media_38cfe443541573a1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_38cfe443541573a1.png" width="30" height="30" /></a>
 is available . Click this button to display a slider to adjust the
 darkening or lightening of the image, as needed. The setting of this
 correction is retained even after the application is closed. Clicking in
@@ -1626,7 +1829,7 @@ In this case, it may help to turn off manual correction in the
 application settings (<em>Settings</em>).</p>
 <p>The camera supports both portrait and landscape shooting.</p>
 <p>The photo is taken by tapping the camera
-<img src="/media/media_2c1000e8e08322b9.png" width="30" height="30" />
+<a class="glightbox" href="/media/media_2c1000e8e08322b9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2c1000e8e08322b9.png" width="30" height="30" /></a>
 , or by pressing the hardware button on the device defined in the
 application settings (<em>Settings</em>). Then the auto shutter will release
 with a countdown of approximately 5 seconds. The following conditions
@@ -1652,78 +1855,78 @@ displayed, shooting will not be enabled and the shooting button will not
 be available. If any of these conditions are violated during auto
 shutter release, the image will also be rejected.</p>
 <p>Click the button
-<img src="/media/media_f2dbf52b9b0ac136.gif" width="18" height="18" alt="image60.png" />
+<a class="glightbox" href="/media/media_f2dbf52b9b0ac136.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_f2dbf52b9b0ac136.gif" width="18" height="18" alt="image60.png" /></a>
 to close the Camera mode and return to the previous screen.</p>
-<h3 id="map">Map</h3>
+<h3 id="map">Map<a class="headerlink" href="#map" title="Permanent link">#</a></h3>
 <p>The map is divided into two modes, one (photo mode) showing a group of
 photos of the logged in user (from sets of individual photos or photos
 within tasks), the other (path tracking mode) shows the currently
 recorded or already recorded paths.</p>
-<p><img src="/media/media_d39586609e8cc5a6.png" width="227" height="491" />
-<img src="/media/media_c37fb6aae4debcb3.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_d39586609e8cc5a6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_d39586609e8cc5a6.png" width="227" height="491" /></a>
+<a class="glightbox" href="/media/media_c37fb6aae4debcb3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_c37fb6aae4debcb3.png" width="227" height="491" /></a>  </p>
 <p>Fig. 12</p>
 <p>The map photos and tracked paths
 If location data is available, the current position will be marked on the map in the form of a blue dot</p>
-<p><img src="/media/media_482461b227da517f.gif" width="11" height="11" alt="Forma2" />
+<p><a class="glightbox" href="/media/media_482461b227da517f.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_482461b227da517f.gif" width="11" height="11" alt="Forma2" /></a>
 , which can be navigated on the map by tapping the
-<img src="/media/media_e600403c1c4da7f9.png" width="30" height="30" /></p>
+<a class="glightbox" href="/media/media_e600403c1c4da7f9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_e600403c1c4da7f9.png" width="30" height="30" /></a></p>
 <p>Button
-<img src="/media/media_68e4c22f7c5e28d9.png" width="40" height="31" />
+<a class="glightbox" href="/media/media_68e4c22f7c5e28d9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_68e4c22f7c5e28d9.png" width="40" height="31" /></a>
 <strong>/</strong>
-<img src="/media/media_eebce8a1be8dd615.png" width="40" height="31" />
+<a class="glightbox" href="/media/media_eebce8a1be8dd615.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_eebce8a1be8dd615.png" width="40" height="31" /></a>
 switches the map view to a satellite or a map view.</p>
-<p><img src="/media/media_ccfb6bc49aa49f97.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_ccfb6bc49aa49f97.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_ccfb6bc49aa49f97.png" width="227" height="491" /></a>  </p>
 <p>Fig. 13 Preview of the photo on the map</p>
 <p>If the map is in path tracking mode, the current position calculated
 from GNSS as the center of gravity of the positions is also displayed.
-This location is indicated by a red dot <img src="/media/media_884182f48a03879e.gif" width="11" height="11" alt="Forma3" /></p>
+This location is indicated by a red dot <a class="glightbox" href="/media/media_884182f48a03879e.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_884182f48a03879e.gif" width="11" height="11" alt="Forma3" /></a></p>
 <p>This position is always updated after the collection of all samples
 necessary for the calculation of the center of gravity, the number of which is defined in the application settings (<em>Settings</em>) by the
 parameter <em>Number of samples for the center of gravity</em>. Samples for
 calculating this position are taken from GGA sentences from NMEA
 messages from navigation satellites. Let these individual samples be
 denoted as
-<img alt="" src="/media/media_9484530f61b074d2.gif" /> . The
+<a class="glightbox" href="/media/media_9484530f61b074d2.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_9484530f61b074d2.gif" /></a> . The
 calculation is performed as follows:</p>
 <p>The centroid
-<img alt="" src="/media/media_ed222e73b4448.gif" /> of the
-set <img alt="" src="/media/media_1be062c05ec25585.gif" />
+<a class="glightbox" href="/media/media_ed222e73b4448.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_ed222e73b4448.gif" /></a> of the
+set <a class="glightbox" href="/media/media_1be062c05ec25585.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_1be062c05ec25585.gif" /></a>
 consisting of all defined points
-<img alt="" src="/media/media_832235aa8dfb0eb.gif" /> is
+<a class="glightbox" href="/media/media_832235aa8dfb0eb.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_832235aa8dfb0eb.gif" /></a> is
 computed as the average of the points</p>
-<p><img alt="" src="/media/media_ca134420c34c7a58.gif" /> where
-<img alt="" src="/media/media_e8b95e8cdd4fbb55.gif" /> is
+<p><a class="glightbox" href="/media/media_ca134420c34c7a58.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_ca134420c34c7a58.gif" /></a> where
+<a class="glightbox" href="/media/media_e8b95e8cdd4fbb55.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_e8b95e8cdd4fbb55.gif" /></a> is
 the <em>innermost convex hull</em> of set
-<img alt="" src="/media/media_b215eb0eb29d55e6.gif" /> .</p>
+<a class="glightbox" href="/media/media_b215eb0eb29d55e6.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_b215eb0eb29d55e6.gif" /></a> .</p>
 <p>The innermost convex hull is computed based on following definition:</p>
 <p>Let the set
-<img alt="" src="/media/media_c1e2e2ead7f54f22.gif" /> be a
+<a class="glightbox" href="/media/media_c1e2e2ead7f54f22.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_c1e2e2ead7f54f22.gif" /></a> be a
 convex hull of the original set
-<img alt="" src="/media/media_aa2c376a9cd89bb2.gif" /> .</p>
+<a class="glightbox" href="/media/media_aa2c376a9cd89bb2.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_aa2c376a9cd89bb2.gif" /></a> .</p>
 <p>Then the recursive relation</p>
-<p><img alt="" src="/media/media_e15b74dd18be293e.gif" /> is
+<p><a class="glightbox" href="/media/media_e15b74dd18be293e.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_e15b74dd18be293e.gif" /></a> is
 convex hull of
-<img alt="" src="/media/media_40acecee0a297f22.gif" /><br />
-<img alt="" src="/media/media_83d7b1203ac3dcb9.gif" /></p>
+<a class="glightbox" href="/media/media_40acecee0a297f22.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_40acecee0a297f22.gif" /></a><br />
+<a class="glightbox" href="/media/media_83d7b1203ac3dcb9.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_83d7b1203ac3dcb9.gif" /></a></p>
 <p>can be defined
-(<img alt="" src="/media/media_df5f1d85563e6a37.gif" /> ).
+(<a class="glightbox" href="/media/media_df5f1d85563e6a37.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_df5f1d85563e6a37.gif" /></a> ).
 Since finally many points in the set
-<img alt="" src="/media/media_46a3d2b41f77aa35.gif" /> are
+<a class="glightbox" href="/media/media_46a3d2b41f77aa35.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_46a3d2b41f77aa35.gif" /></a> are
 defined, there exists finally one
-<img alt="" src="/media/media_91a8d809c44ba9bf.gif" /> for
-<img alt="" src="/media/media_301d9aa36a07cc86.gif" /> .
-Then <img alt="" src="/media/media_1b56cbe7571fe5f2.gif" />
+<a class="glightbox" href="/media/media_91a8d809c44ba9bf.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_91a8d809c44ba9bf.gif" /></a> for
+<a class="glightbox" href="/media/media_301d9aa36a07cc86.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_301d9aa36a07cc86.gif" /></a> .
+Then <a class="glightbox" href="/media/media_1b56cbe7571fe5f2.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_1b56cbe7571fe5f2.gif" /></a>
 is the innermost convex hull of the set
-<img alt="" src="/media/media_b215eb0eb29d55e6.gif" /> .</p>
+<a class="glightbox" href="/media/media_b215eb0eb29d55e6.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/media/media_b215eb0eb29d55e6.gif" /></a> .</p>
 <p>In the path tracking mode of the map, you can record a path in the map view. Click the <em>RECORD</em> button, the dialog opens for entering a path name, which is optional. When this dialog is confirmed, the path will be recorded. The user can switch the application screens at will when recording the path, but the application must remain active and in the forefront of Android processes. The path is recorded in the form of points, between which there is an approximate recording interval of 1 second. When recording, the path is simultaneously drawn on the map in the form of a black linearly angled curve. Each point on the curve is
-represented by a pin <img src="/media/media_141f482a3900a946.png" width="30" height="30" />
+represented by a pin <a class="glightbox" href="/media/media_141f482a3900a946.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_141f482a3900a946.png" width="30" height="30" /></a>
 . When you click on it, an overview of its geolocation data is
 displayed. Use the PAUSE / UNPAUSE button to pause a path recording.
 Click the STOP button and then confirm the dialog box to end the
 recording. The path is then drawn as a polygon, where the first and last points of the path are connected. You can send the path to the server by clicking on SEND button. Click the <em>PATHS</em> button to go to the list of already recorded paths (<em>Paths</em>), where you can select a path to draw it on the map. Fields <em>id</em> and <em>name</em> of the drawn path on the map (currently recorded or already recorded) are displayed in the overview next to the buttons for recording the route. Clicking in this report will move the map view to this path. In the application settings, you can turn on a sound tone when recording a path point and automatically pan the map view to the current location during recording.</p>
-<h3 id="paths">Paths</h3>
+<h3 id="paths">Paths<a class="headerlink" href="#paths" title="Permanent link">#</a></h3>
 <p>This list shows all recorded routes (Fig. 14). Clicking on a specific road will draw it on the map (M). Each path already sent to the server is assigned its ID (<em>identification number</em>). If the route has not yet been sent, it can be deleted by clicking on the
-<img src="/media/media_2608af981d409efc.png" width="30" height="30" />
+<a class="glightbox" href="/media/media_2608af981d409efc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_2608af981d409efc.png" width="30" height="30" /></a>
 . Click on the SEND button to send all paths which has not been sent
 yet.</p>
 <ul>
@@ -1736,9 +1939,9 @@ yet.</p>
 <p>The By the center of gravity attribute determines whether waypoints were taken as the center of gravity of the positions.</p>
 </li>
 </ul>
-<p><img src="/media/media_79764086c190ad20.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_79764086c190ad20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_79764086c190ad20.png" width="227" height="491" /></a>  </p>
 <p>Fig. 14 Recorded paths list</p>
-<h3 id="gnss-raw-data">GNSS Raw Data</h3>
+<h3 id="gnss-raw-data">GNSS Raw Data<a class="headerlink" href="#gnss-raw-data" title="Permanent link">#</a></h3>
 <p>In this screen (Fig. 14) the user sees the current raw GNSS data
 received from the satellites with a basic overview of the device, the
 same as on the main screen (M). Most of the data is obtained from NMEA
@@ -1764,25 +1967,25 @@ message records.</p>
 <li>List of satellites</li>
 <li><em>GALILEO SATs, GPS SATs, GLONASS SATs, BEIDOU SATs</em> display satellites sending the SNR.</li>
 </ul>
-<p><img src="/media/media_281cbfb8a8d608c.jpg" width="202" height="404" />
-<img src="/media/media_eec5a0b37b09930a.jpg" width="202" height="404" />
-<img src="/media/media_a09a32ddef6b5296.jpg" width="202" height="404" />  </p>
+<p><a class="glightbox" href="/media/media_281cbfb8a8d608c.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_281cbfb8a8d608c.jpg" width="202" height="404" /></a>
+<a class="glightbox" href="/media/media_eec5a0b37b09930a.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_eec5a0b37b09930a.jpg" width="202" height="404" /></a>
+<a class="glightbox" href="/media/media_a09a32ddef6b5296.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_a09a32ddef6b5296.jpg" width="202" height="404" /></a>  </p>
 <p>Fig. 15 GNSS Raw Data</p>
-<h3 id="gnss-skymap">GNSS SkyMap</h3>
+<h3 id="gnss-skymap">GNSS SkyMap<a class="headerlink" href="#gnss-skymap" title="Permanent link">#</a></h3>
 <p>This section let you compare the expected sky map of satellites
 calculated from your position to your actual measured sky map from the phone.</p>
 <p>A constellation drop-down menu let you choose a constellation to compare and the graph updates accordingly</p>
 <p>The points in red represent the calculated satellites position, the blue points the actual measured positions. Positions may overlap and result in a purple point representing the two values are one and the same and therefore correct.</p>
-<p><img src="/media/media_a4acea7d2696cee8.jpg" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_a4acea7d2696cee8.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_a4acea7d2696cee8.jpg" width="227" height="491" /></a>  </p>
 <p>Fig. 16 GNSS SkyMap</p>
-<h2 id="about">About</h2>
+<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">#</a></h2>
 <p>This screen contains basic information about the application (Fig. 16).</p>
-<p><img src="/media/media_8dde05667c7203d1.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_8dde05667c7203d1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_8dde05667c7203d1.png" width="227" height="491" /></a>  </p>
 <p>Fig. 17 About screen</p>
-<h2 id="settings">Settings</h2>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">#</a></h2>
 <p>The screen provides the main settings of the entire application (Fig.
 17).</p>
-<p><img src="/media/media_6aa03ebedf6f0dcd.png" width="227" height="491" />  </p>
+<p><a class="glightbox" href="/media/media_6aa03ebedf6f0dcd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_6aa03ebedf6f0dcd.png" width="227" height="491" /></a>  </p>
 <p>Fig. 18 Settings Screen</p>
 <ul>
 <li>
@@ -1856,7 +2059,7 @@ point</p>
 recorded while recording a path (M).</p>
 </li>
 </ul>
-<h3 id="external-bluetooth-gps-gnss">External Bluetooth GPS / GNSS</h3>
+<h3 id="external-bluetooth-gps-gnss">External Bluetooth GPS / GNSS<a class="headerlink" href="#external-bluetooth-gps-gnss" title="Permanent link">#</a></h3>
 <p>This section allows to scan for an external GPS Device and pair it to
 your application to use it as the source of the location.</p>
 <p>The button SCAN DEVICES allow you to start scanning for devices, a list
@@ -1864,22 +2067,22 @@ of devices detected will appear. After choosing a device, you can press
 TEST CONNECTION to test if the device is connected AND compatible with
 the application.This setting is saved and the device data will be used
 for all location instances in the application (map, tracking and photo).</p>
-<p><img src="/media/media_66fdb0096b025c0.png" width="192" height="417" /></p>
+<p><a class="glightbox" href="/media/media_66fdb0096b025c0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/media/media_66fdb0096b025c0.png" width="192" height="417" /></a></p>
 <p>Fig. 19 External Bluetooth GPS</p>
-<h2 id="offline-usage">Offline Usage</h2>
+<h2 id="offline-usage">Offline Usage<a class="headerlink" href="#offline-usage" title="Permanent link">#</a></h2>
 <p>The user can snap pictures even when there is no internet connection
 available, and then send the pictures when it is. Pictures will be
 stored in a protected storage space of the app for later usage.</p>
 <p>In case of OSNMA validated picture, the verification process of the
 picture will happen when the user sends their pictures to the server,
 based on the data gathered during the shot.</p>
-<h2 id="source-code-overview">Source Code Overview</h2>
-<h3 id="general-overview">General Overview</h3>
+<h2 id="source-code-overview">Source Code Overview<a class="headerlink" href="#source-code-overview" title="Permanent link">#</a></h2>
+<h3 id="general-overview">General Overview<a class="headerlink" href="#general-overview" title="Permanent link">#</a></h3>
 <p>The application is developed as a regular application for the Android OS in the Java language compiled in the Android Studio system with Gradle build automation tool. The source code is structured according to the Android project standard described at <a href="https://developer.android.com/studio/projects"><u>https://developer.android.com/studio/projects</u></a></p>
 <p>The application consists of three parts, from the kernel of the application itself and the two libraries gnss_scan and convex_hull, which are distributed in AAR format, where the gnss_scan library is dependent on the convex_hull library. These libraries are separated from the functionality of the application kernel to allow their independent use in other projects.</p>
 <p>All three parts of the code will be described by summarizing the description of their purpose, their classes, and their main configuration files.
  </p>
-<h3 id="application-kernel">Application Kernel</h3>
+<h3 id="application-kernel">Application Kernel<a class="headerlink" href="#application-kernel" title="Permanent link">#</a></h3>
 <p>The kernel of the application handles all essential tasks related to communication with the server, UI management, access to the phone hardware and other necessary processes required for running in the Android OS. 
 The primary purposes of this section are:</p>
 <ul>
@@ -2133,7 +2336,7 @@ The primary purposes of this section are:</p>
 <p>Dependencies on other external libraries can be read from gradle configuration files.</p>
 <p>All source files are located and structured in accordance with the required public standards for Android projects <a href="https://developer.android.com/studio/projects"><u>https://developer.android.com/studio/projects</u></a> .
  </p>
-<h3 id="gnss_scan-library">Gnss_scan Library</h3>
+<h3 id="gnss_scan-library">Gnss_scan Library<a class="headerlink" href="#gnss_scan-library" title="Permanent link">#</a></h3>
 <p>This library provides the ability to receive and process GNSS data and mobile network data in real time in a convenient way by registering callbacks to scanners of the mobile network and data from location satellites. This library is dependent on convex_hull library.
 The primary purposes of this library are:</p>
 <ul>
@@ -2194,7 +2397,7 @@ Dependencies on other external libraries can be read from the gradle configurati
 </ul>
 <p>All source files are located and structured in accordance with the required public standards for Android AAR library <a href="https://developer.android.com/studio/projects/android-library#aar-contents"><u>https://developer.android.com/studio/projects/android-library#aar-contents</u></a>.
  </p>
-<h3 id="convex_hull-library">Convex_hull Library</h3>
+<h3 id="convex_hull-library">Convex_hull Library<a class="headerlink" href="#convex_hull-library" title="Permanent link">#</a></h3>
 <p>This library provides the ability to calculate the convex hull centroid based on the provided data in the format of a two-dimensional Cartesian coordinate system. This library can be used for any type of data that represent position in this coordinate system.</p>
 <p>The primary purposes of this library are:</p>
 <ul>
@@ -2237,8 +2440,16 @@ All source files are located and structured in accordance with the required publ
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -2266,11 +2477,21 @@ All source files are located and structured in accordance with the required publ
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.indexes"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
+        <script src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+      
+        <script src="https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+      
+        <script src="../assets/javascripts/obsidian_tags.js"></script>
+      
+        <script src="../assets/javascripts/interactive_graph.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
