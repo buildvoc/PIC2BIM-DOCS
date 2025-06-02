@@ -1,8 +1,8 @@
 site_name: PIC2BIM DOCS
 site_url: https://docs.pic2bim.co.uk
 
-draft_docs: |
-  drafts/
+# draft_docs: |
+#   drafts/
 
 theme:
   logo: assets//images/logo_pic2bim_white.png
