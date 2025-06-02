@@ -1,9 +1,7 @@
 ---
-title: Getting started
+title: Getting started & Intro
 description: PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application
 ---
-Interactive Graph Links ---
-
 ### Introduction
 PIC2BIM (EGNSS4ALL) is a geotagging photo mobile phone application, which is Open-Source for IOS and Android.
 
@@ -40,9 +38,9 @@ Future development
 
 This  Quick  Start  Guide  provides  a  brief  overview  of  the  main  functionalities  of  the  PIC2BIM application.  Detailed  information  on  the  functionalities  of  the  application  can  be  found  in  the following sections:
 
-* Mobile Application - iOS
-* Mobile Application - Android
-* Web Console
+* Mobile Application Android
+* Mobile Application iOS
+* Web-Console
 
 The Pic2Bim / Egnss4all application is available at Google Play Store and Apple App Store:
 
@@ -148,3 +146,5 @@ Scroll-up to see all the options, in case that you are not able to see the displ
 <p>Fig. 18 <b>Available photos</b></p>
 <img src="/media/media_web-console-available-paths.png" width="363" height="35" />
 <p>Fig. 19 <b>Available paths</b></p>
+
+[[Onsite-Inspections]]

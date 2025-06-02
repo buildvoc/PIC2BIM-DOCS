@@ -52,14 +52,14 @@ $.getJSON(document.currentScript.src + '/../graph.json', function (graph) {
     node.symbolSize += 5;
   });
 
-  // special feature, if u want to have long note titles, u can use this ' •'
+  // special feature, if u want to have long note titles, u can use this ' ï¿½'
   // to cut everything behind in graph view
   graph.nodes.forEach(function (node) {
-    node.name = node.name.split(' •')[0];
+    node.name = node.name.split(' ï¿½')[0];
   });
   graph.links.forEach(function (link) {
-    link.source = link.source.split(' •')[0];
-    link.target = link.target.split(' •')[0];
+    link.source = link.source.split(' ï¿½')[0];
+    link.target = link.target.split(' ï¿½')[0];
   });
 
   option = {
@@ -98,7 +98,7 @@ $.getJSON(document.currentScript.src + '/../graph.json', function (graph) {
 	  }
 	},
         labelLayout: {
-          hideOverlap: false // true could be a good idea for large graphs
+          hideOverlap: true // true could be a good idea for large graphs
         },
         scaleLimit: {
           min: 0.5,

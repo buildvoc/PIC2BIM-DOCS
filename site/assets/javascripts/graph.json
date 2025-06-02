@@ -2,63 +2,51 @@
   "nodes": [
     {
       "id": "0",
-      "name": "Getting started",
+      "name": "Getting started & Intro",
       "symbolSize": 0,
       "value": "/"
     },
     {
       "id": "1",
-      "name": "Mobile Application - iOS",
+      "name": "Active Travel",
       "symbolSize": 0,
-      "value": "/android/"
+      "value": "/Active-Travel/"
     },
     {
       "id": "2",
-      "name": "Building attributes",
+      "name": "\ud83d\udef0\ufe0f OSNMA-Enabled Satellite Signals for PIC2BIM iOS \u2014 Detailed Analysis",
       "symbolSize": 0,
-      "value": "/building-attributes/"
+      "value": "/Artificial%20Intelligence%20Created/OSNMA_Analysis_PIC2BIM_iOS/"
     },
     {
       "id": "3",
-      "name": "Mobile Application - iOS",
+      "name": "\ud83d\udcf8\ud83d\udef0\ufe0f UML Sequence Diagram: `OSNMAEnabled` with `CameraViewController` (PIC2BIM iOS)",
       "symbolSize": 0,
-      "value": "/ios/"
+      "value": "/Artificial%20Intelligence%20Created/OSNMA_CameraViewController_Sequence/"
     },
     {
       "id": "4",
-      "name": "Web Console Interface",
+      "name": "\ud83d\udcf6 UML Sequence Diagram: OSNMA Authentication Flow",
       "symbolSize": 0,
-      "value": "/web-console-tasklist/"
+      "value": "/Artificial%20Intelligence%20Created/OSNMA_Sequence_Diagram/"
     },
     {
       "id": "5",
-      "name": "Web Console Interface",
+      "name": "\ud83d\udd10 UML Class Diagram: PublicKey in PIC2BIM iOS",
       "symbolSize": 0,
-      "value": "/web-console/"
+      "value": "/Artificial%20Intelligence%20Created/PublicKey_Class_Diagram_PIC2BIM_iOS/"
     },
     {
       "id": "6",
-      "name": "Concept",
+      "name": "\ud83d\udef0\ufe0f UML Class Diagram: SatelliteID in PIC2BIM iOS",
       "symbolSize": 0,
-      "value": "/guides/Concept/"
+      "value": "/Artificial%20Intelligence%20Created/SatelliteID_Class_Diagram_PIC2BIM_iOS/"
     },
     {
       "id": "7",
-      "name": "Field Inspection Onsite",
+      "name": "\ud83d\udef0\ufe0f UML Sequence Diagram: `satelliteID` Processing in PIC2BIM iOS",
       "symbolSize": 0,
-      "value": "/guides/field-inspection-onsite/"
-    },
-    {
-      "id": "8",
-      "name": "Field Inspection Supervisor",
-      "symbolSize": 0,
-      "value": "/guides/field-inspection-supervisor/"
-    },
-    {
-      "id": "9",
-      "name": "How to Guides",
-      "symbolSize": 0,
-      "value": "/guides/guides/"
+      "value": "/Artificial%20Intelligence%20Created/Sequence_SatelliteID_PIC2BIM_iOS/"
     }
   ],
   "links": []

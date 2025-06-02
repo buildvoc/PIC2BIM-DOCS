@@ -1,23 +1,29 @@
 site_name: PIC2BIM DOCS
 site_url: https://docs.pic2bim.co.uk
 
+draft_docs: |
+  drafts/
+
 theme:
-  logo: assets//images/logo_egnss4all_white.png
+  logo: assets//images/logo_pic2bim_white.png
   name: 'material'
   palette: 
     # Palette toggle for light mode
     - scheme: default
+      primary: light blue
+      accent: light blue
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-        primary: blue
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: light blue
+      accent: light blue
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-        primary: blue
+
   features:
     - content.action.view
     - content.code.annotate
@@ -52,7 +58,11 @@ markdown_extensions:
   - sane_lists
   - pymdownx.details
   - pymdownx.magiclink
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: "#"
 
