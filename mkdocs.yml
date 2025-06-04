@@ -46,6 +46,9 @@ plugins:
   - obsidian-interactive-graph
   - obsidian-bridge
   - glightbox
+  - plantuml:
+      puml_keyword: plantuml
+      puml_url: https://www.plantuml.com/plantuml/
 
 markdown_extensions:
   - pymdownx.tasklist:
