@@ -5,39 +5,42 @@ This class diagram represents the structure and relationships of the `OSNMAParse
 
 ---
 
-## 🧩 Mermaid Class Diagram
+## 🧩 UML Class Diagram
 
-```mermaid
-classDiagram
-    class OSNMAParser {
-        +parse(message: GNSSMessage): OSNMAData
-        +validateSignature(data: OSNMAData): Bool
-        +extractKeys(): [PublicKey]
-        -rawMessage: GNSSMessage
-        -validationStatus: Bool
-    }
+```plantuml
+@startuml
 
-    class GNSSMessage {
-        +timestamp: Date
-        +satelliteID: String
-        +payload: Data
-    }
+class OSNMAParser {
+  + parse(message: GNSSMessage): OSNMAData
+  + validateSignature(data: OSNMAData): Bool
+  + extractKeys(): [PublicKey]
+  - rawMessage: GNSSMessage
+  - validationStatus: Bool
+}
 
-    class OSNMAData {
-        +signature: Data
-        +authFlag: Bool
-        +satelliteID: String
-        +timestamp: Date
-    }
+class GNSSMessage {
+  + timestamp: Date
+  + satelliteID: String
+  + payload: Data
+}
 
-    class PublicKey {
-        +id: String
-        +key: String
-    }
+class OSNMAData {
+  + signature: Data
+  + authFlag: Bool
+  + satelliteID: String
+  + timestamp: Date
+}
 
-    OSNMAParser --> GNSSMessage
-    OSNMAParser --> OSNMAData
-    OSNMAParser --> PublicKey
+class PublicKey {
+  + id: String
+  + key: String
+}
+
+OSNMAParser --> GNSSMessage
+OSNMAParser --> OSNMAData
+OSNMAParser --> PublicKey
+
+@enduml
 ```
 
 ---

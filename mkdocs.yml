@@ -49,6 +49,9 @@ plugins:
   - plantuml:
       puml_keyword: plantuml
       puml_url: https://www.plantuml.com/plantuml/
+      theme:
+        light: material/light-blue-light
+        dark: material/light-blue-dark
 
 markdown_extensions:
   - pymdownx.tasklist:

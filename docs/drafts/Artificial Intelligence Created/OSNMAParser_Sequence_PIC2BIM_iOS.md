@@ -5,10 +5,10 @@ This sequence diagram outlines the flow of operations for parsing and validating
 
 ---
 
-## 🧩 Mermaid Sequence Diagram
+## 🧩 UML Sequence Diagram
 
-```mermaid
-sequenceDiagram
+```plantuml
+@startuml
   participant App
   participant GNSSReceiver
   participant OSNMAParser
@@ -22,6 +22,7 @@ sequenceDiagram
   OSNMAParser-->>GNSSReceiver: Validated Message
   GNSSReceiver->>MetadataHandler: Attach Location to Photo
   MetadataHandler-->>App: Update UI/Report
+@enduml
 ```
 
 ---
